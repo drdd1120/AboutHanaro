@@ -1,0 +1,834 @@
+.fade-in-content {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in-content.visible {
+    opacity: 1;
+}
+
+
+body{
+    background: black;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+
+}
+
+#header_frame{
+    width: 100vw;
+    height: 7%;
+    margin-right:auto;
+    margin-left:auto;
+    position: fixed;
+    border:1px solid black;
+    z-index: 1;
+}
+
+.gnb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid;
+    height: 30px;
+    
+}
+
+.nav_item{
+    color:black;
+    font-weight : bold;
+}
+
+/* 
+여기!! */
+.sub_visual_box{
+    margin:0 auto;
+    position: absolute;
+    border: 1px solid black;
+    width: 100%;
+    height: 800vh;
+}
+
+#sub_background_img{ 
+    margin-left: 1px;
+    margin-right: 1px;
+    width:100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+
+.dynamic_img_frame{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:200px;
+    width: 100%;
+    height: 500px;
+
+}
+
+#dynamic_img{
+    height: 100%;
+    width: 500px;
+    border: 1px dotted red;
+
+}
+
+.sub_content_frame{
+    margin:0 auto;
+    position: relative;
+    width: 100%;
+    height: 580vh;
+}
+
+.sub_content_box{
+    margin:0 auto;
+    width: 70%;
+    height: 100%;
+    /* border:1px solid blue; */
+}
+
+.sub_content_box_top_text_box{
+    width: 100%;
+    height:120vh;
+    /* border:1px solid purple; */
+}
+
+#sub_content_box_top_text{
+    position: relative;
+    top:30%;
+    margin: 0 auto;
+    width:70%;
+    height:18%;
+    /* border:1px solid black; */
+    text-align: center;
+}
+
+#sub_content_box_top_text h1{
+    color:white;
+    font-family :Pretendard, san-serif;
+    font-size:5em;
+    line-height: 10%;
+    font-weight:700;
+}
+
+#sub_content_box_top_text h2{
+    font-size: 4em;
+    background: linear-gradient(to right top, #f78bc8, #46aff5);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.sub_content_box_middle{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height:350vh;
+    /* border:1px solid purple; */
+
+}
+
+.content_middle_box1{
+    display: flex;
+    align-items: center;
+    /* border:1px solid black; */
+    width: 100%;
+    height: 20%;
+}
+
+.content_middle_box2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* border:1px solid black; */
+    width: 100%;
+    height: 20%;
+}
+
+.middle_box_left{
+    position: relative;
+    left:5%;
+    /* border: 1px solid blue; */
+    width: 45%;
+    height: 98%;
+}
+
+.middle_box_right{
+    position: relative;
+    right:5%;
+    /* border: 1px solid blue; */
+    width: 45%;
+    height: 98%;
+}
+
+.middle_box_img{
+    position: relative;
+
+    margin:auto;
+    /* border: 1px dotted red; */
+    width: 75%;
+    height: 65%;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.middle_box_img.visible {
+    opacity: 1;
+}
+
+#middle_box_img1{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background-image: url(./image/fintech.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#middle_box_img2{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background-image: url(./image/coding.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#middle_box_img3{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background-image: url(./image/digital_hana.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#middle_box_img4{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background-image: url(./image/finance_digital.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.miidle_box_text{
+    font-weight: bold;
+    color:white;
+    /* color:black; */
+    margin:auto;
+    /* border: 1px dotted blue; */
+    height: 20%;
+    width:75%;
+    font-size:18px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.miidle_box_text.visible {
+    opacity: 1;
+}
+
+
+.sub_content_box_bottom{
+    /* border:1px solid purple; */
+    width:100%;
+    height: 100vh;
+}
+
+.sub_content_box_bottom_frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top:40%;
+    /* border:1px solid black; */
+    width: 100%;
+    height: 300px;
+}
+
+#sub_content_box_bottom_frame_applytext{
+
+    width: 90%;
+    height: 200px;
+}
+
+#sub_content_box_bottom_frame_applytext h2{
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
+
+
+#gradient{
+    text-align: center;
+    font-size: 1em;
+    background: linear-gradient(to right top, #f78bc8, #46aff5);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.apply_button{
+    top:-50px;
+    width: 150px;
+    height: 50px;
+    font-size:16px;
+    color: white;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    /* display:inline-block; */
+    display: flex; /* 텍스트를 수직으로 가운데 정렬하기 위해 Flexbox 사용 */
+    align-items: center; /* 수직 가운데 정렬을 위해 align-items 속성 사용 */
+    justify-content: center;
+    border:2px solid white;
+    border-radius: 2em;
+}
+
+.apply_button:hover{
+    font-weight: bold;
+    background: linear-gradient(to right top, #f78bc8, #46aff5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.apply_button::before {
+    content: '';
+    position: absolute;
+    border-radius: 2em;
+    left: 0px;
+    bottom:0px;
+    z-index:-1;
+    width: 100%;
+    height:100%;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px white;
+    display: block;
+    -webkit-transition: all 0.8s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.8s cubic-bezier(.5, .24, 0, 1)
+}
+  /* if you want it to show from the right use -300px instead */
+.apply_button:hover::before {
+box-shadow: inset 300px 0px 0px white;
+}
+
+
+
+
+.bottom_content_frame{
+    margin:0 auto;
+    border: 1px solid red;
+    width: 100%;
+    height: 320vh;
+}
+
+.bottom_content_benefit_frame{
+    /* border:1px solid blue; */
+    width:100%;
+    height: 100vh;
+}
+
+.bottom_content_benefit_box{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top:10%;
+    /* border:1px solid red; */
+    width:100%;
+    height: 80vh;
+}
+
+.bottom_content_benefit_box{
+    /* border:1px solid black; */
+    width: 90%;
+    height: 80%;
+}
+
+
+.bottom_content_benefit_title_box{
+    position: relative;
+    bottom: 10%;
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid blue; */
+}
+
+.bottom_content_benefit_title_box h2{
+    color: white; 
+    text-align: center;
+    font-size: 4em;
+}
+
+/* 여기!!!*/
+
+.carousel {
+    width: 900px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+    
+    .carousel-container {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+    
+    .carousel-item {
+    flex: 0 0 33.33%;
+    height: 100%;
+}
+    
+    .carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+    
+    .carousel-controls .arrow {
+    width: 30px;
+    height: 60px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 24px;
+}
+    
+    .carousel-controls .arrow:hover {
+    color: #666;
+}
+
+.bottom_content_benefit_carousel_frame{
+    /* border:1px solid black; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+}
+
+.bottom_content_benefit_carousel_contents_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 100%;
+}
+
+.benefit_carousel_title_box{
+    position: relative;
+    left:5%;
+    top:2%;
+    /* border: 1px solid red; */
+    width: 600px;
+    height: 15%;
+    
+}
+
+#benefit_keyword{
+    text-align: center;
+    display: inline-block;
+    border-radius: 2em;
+    width: 22%;
+    height: 30%;
+    background-color: #89DFA0;
+    position: relative;
+    bottom:4px
+}
+
+.keyword{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+#benefit_title{
+    position: relative;
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 20%;
+    bottom:5px;
+}
+
+#benefit_title h3{
+    color:white;
+    font-size: 30px;
+}
+
+.benefit_carousel_contents_box{
+    margin: auto;
+    border: 1px solid #89DFA0;;
+    border-radius: 1em;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info_title{
+    color:white;
+    /* border: 1px solid black; */
+    margin-left: 3%;
+    width:90%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info_text{
+    color:white;
+    /* border: 1px solid black; */
+    margin-left: 3%;
+    width:90%;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.benefit_carousel_sub_contents_box{
+    color:white;
+    margin: auto;
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 30%;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* 여기!!!*/
+
+.bottom_content_ideal_talent_frame{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 110vh;
+}
+
+.bottom_content_ideal_talent_box{
+    position: relative;
+    top:9%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 90vh;
+}
+
+.ideal_talent_text_box{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 30vh
+}
+
+.ideal_talent_visual_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 50vh
+}
+
+.ideal_talent_text_content_box1{
+    color: white;
+    margin: auto;
+    /* border:1px solid black; */
+    width:800px;
+    height: 30%;
+}
+
+@Keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.spiner_container{
+    /* border:1px solid black; */
+    width:350px;
+    height: 350px;;
+    margin: auto;
+}
+
+
+.square{
+    /* border:1px solid black; */
+    animation-name:rotate;
+    animation-iteration-count:infinite;
+    animation-play-state: running;
+    animation-timing-function:linear;
+    width:350px;
+    height:350px;
+}
+
+#ani_duration1{
+    animation-duration: 25s;
+}
+
+#ani_duration2{
+    animation-duration: 12s;
+}
+
+#ani_duration3{
+    animation-duration: 17s;
+}
+
+.circle_point{
+    position: relative;
+    background-color: #89DFA0;;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    top:-6px;
+    left:170px
+
+}
+.circle_border{
+    position: relative;
+    border: 1px solid #89DFA0;
+    border-radius: 50%;
+    width:350px;
+    height:350px;
+    top:-11px;
+    opacity:0.7;
+}
+
+.inner_circle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top:-319px;
+    left:34px;
+    border:2px solid #89DFA0;
+    width:80%;
+    height: 80%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+#inner_circle_img1{
+    background-image: url(./image/devopsOpac.jpg);
+}
+
+#inner_circle_img2{
+    background-image: url(./image/agileOpac.jpg);
+}
+
+#inner_circle_img3{
+    background-image: url(./image/communicationOpac.jpg);
+}
+.inner_circle_title{
+    /* border : 1px solid black; */
+    width: 90%;
+    height: 20%;
+}
+
+.inner_circle_text{
+    /* border : 1px solid black; */
+    width: 90%;
+    height: 30%;
+}
+
+#inner_title_font{
+    color: white;
+    text-align: center;
+    font-weight:700;
+    font-size:23px;
+}
+
+#inner_text_font{
+    color: white;
+    text-align: center;
+    font-weight: 800;
+}
+
+.ideal_title_text{
+    text-align: center;
+    font-size: 38px;
+    font-weight:700;
+}
+
+.ideal_talent_text_content_box2{
+    position: relative;
+    bottom: 50px;
+    margin: auto;
+    /* border:1px solid black; */
+    width:600px;
+    height: 40%;
+}
+
+.ideal_text{
+    color: white;
+    text-align: center;
+    /* line-height:25.2px; */
+    font-weight:900;
+}
+
+.ideal_talent_visula_content_box{
+    /* border:1px solid black; */
+    width:350px;;
+    height: 80%;
+}
+
+.bottom_content_ideal_support_frame{
+    background: white;
+    position: relative;
+    top:3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid blue;
+    width:100%;
+    height: 100vh;
+}
+
+.bottom_content_ideal_support_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    width:100%;
+    height: 80vh;
+}
+
+
+.bottom_content_ideal_support_text{
+    color:white;
+    width:90%;
+    height: 20%;
+}
+
+.bottom_content_ideal_support_text p{
+    text-align: center;
+    font-size:40px;
+    font-weight:700;
+
+}
+.bottom_content_ideal_support_visual_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:95%;
+    height: 65%;
+}
+
+.bottom_content_ideal_support_visual_content{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #89DFA0;
+    background-color: #89DFA0;
+    width:30%;
+    height: 100%;
+    border-radius: 5%;
+    
+}
+
+.bottom_content_ideal_support_visual_content p{
+    color:white;
+    text-align: center;
+    font-size:22px;
+    font-weight:600;
+}
+
+.support_visual_content_box{
+    background-color: white;
+    position: relative;
+    width:100;
+    height: 320px;
+}
+
+.support_agency_name1{
+    position: relative;
+    top:20px;
+    margin:auto;
+    width:250px;
+    height: 30px; 
+    background-size: cover;
+    background-image: url('./image/agencylogo.jpg');
+
+}
+
+.support_agency_name2{
+    position: relative;
+    top:20px;
+    margin:auto;
+    width:150px;
+    height: 30px; 
+    background-size: cover;
+    background-image: url('./image/alpacologo.jpg');
+}
+
+.support_explanation{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    height: 220px;
+}
+
+
+
+.support_explanation p{
+    color: black;
+    text-align: left;
+    font-size: 15px;
+}
+
+.support_edu_place_visual_box{
+    background-color: white;
+    width:100;
+    height: 320px;
+}
+
+.support_edu_place_visual_content{
+    margin-top: 20px;
+    background-color: white;
+    width:100;
+    height: 250px;
+}
+
+.edu_place_img{
+    margin: auto;
+    width:90%;
+    height: 240px;
+    background-size: cover;
+    background-image: url('./image/eduplace.jpg');
+}
+
+.eduplace_text{
+    height: 70px;
+}
+
+.eduplace_text p{
+    color: black;
+    font-size: 15px;
+}
+
