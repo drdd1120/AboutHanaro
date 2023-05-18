@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+      defer
+    />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav").load("./navBar.html"); // 원하는 파일 경로를 삽입하면 된다]
+      });
+    </script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/wallop/2.4.1/js/Wallop.min.js"
+    ></script>
+    
+    <script defer src="../js/main.js" type="text/javascript"></script>
+
+    <title>AboutHanaro_Main</title>
+  </head>
+  <body>
+    <header id="nav"></header>
+    <div id="video_area">
+      <video
+        src="../resources/main_top_contents_b2.mp4"
+        id="background_video"
+        autoplay
+        muted
+        loop
+      ></video>
+    </div>
+    <section class="wrapper">
+      <div data-carousel>
+        <ul class="slide__list Wallop-list">
+          <li class="slide__item Wallop-item Wallop-item--current">
+            <h2 class="slide__heading">
+              <div class="mainText">
+                은행권 <em>"최초"</em>
+                <br />
+                K-Digital Training
+              </div>
+            </h2>
+            <blockquote>
+              <cite class="slide__cite"
+                >About<em style="font-style: italic">Hana</em>ro</cite
+              >
+            </blockquote>
+          </li>
+          <li class="slide__item Wallop-item">
+            <h2 class="slide__heading">
+              <div class="mainText">
+                우수 훈련생 限
+                <br />
+                하나금융 그룹
+                <br />
+                <em>14개社 채용우대</em>부여
+              </div>
+            </h2>
+            <blockquote>
+              <cite class="slide__cite"
+                >About<em style="font-style: italic">Hana</em>ro</cite
+              >
+            </blockquote>
+          </li>
+          <li class="slide__item Wallop-item">
+            <h2 class="slide__heading">
+              <div class="mainText">
+                하나은행 디지털/ICT
+                <br />
+                <em>현직자 프로그램</em>
+              </div>
+            </h2>
+            <blockquote>
+              <p class="slide__quote">
+                현직자 강의, 프로젝트 발표 참관 및 피드백, 직무 멘토링
+              </p>
+              <cite class="slide__cite"
+                >About<em style="font-style: italic">Hana</em>ro</cite
+              >
+            </blockquote>
+          </li>
+          <li class="slide__item Wallop-item">
+            <h2 class="slide__heading">
+              <div class="mainText">
+                하나은행 <em>HR 담당자 주관</em>
+                <br />
+                취업 상담
+              </div>
+            </h2>
+            <blockquote>
+              <p class="slide__quote">
+                Digital Hana 路 <em>훈련생 대상 채용 설명회 및 채용상담</em>
+              </p>
+              <cite class="slide__cite"
+                >About<em style="font-style: italic">Hana</em>ro</cite
+              >
+            </blockquote>
+          </li>
+        </ul>
+        <button class="button--prev Wallop-buttonPrevious" title="previous">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.9 50.2">
+            <path d="M25.1 50.2L0 25.1 25.1 0l2.8 2.8L5.7 25.1l22.2 22.2z" />
+          </svg>
+        </button>
+        <button class="button--next Wallop-buttonNext" title="next">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.9 50.2">
+            <path d="M25.1 50.2L0 25.1 25.1 0l2.8 2.8L5.7 25.1l22.2 22.2z" />
+          </svg>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
