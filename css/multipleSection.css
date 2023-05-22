@@ -5,18 +5,19 @@
 }
 .multiple_section{
     /* background-color: #008385; */
-    border-radius: 10px;
+    /* border:12px #008385 solid; */
+    border-radius: 15px;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: flex-start;
-    height: 70vh;
+    height: auto;
     overflow-x: hidden;
 }
 .team-list{
-    height: calc(20vw);
-    top: 50%;
-    transform: translateY(-50%);
+    height: auto;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
     width: 100%;
     display: flex;
     position: relative;
@@ -88,7 +89,7 @@
     height: 100%;
     border:6px white solid;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 /*사람 이름 hover : 1초 변경*/
