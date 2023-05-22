@@ -1,0 +1,216 @@
+/* 공통 스타일 */
+/* body {
+  margin: 0px;
+  background-color: black;
+
+} */
+body {
+  margin: 0px;
+  transition: background-color 2s ease;
+  background-color: black;
+}
+
+.scroll-background {
+  background-color: white;
+}
+
+.bg {
+  background: url(https://www.hanafn.com/upload/common/upeditor/10000110/20230208/20230208093421265.jpg) no-repeat;
+  background-color: rgba(0, 0, 0, 0.3); /* 흑색(검정)에 50% 투명도를 가지는 색상 */
+  background-blend-mode: multiply; /* 배경 이미지와 색상을 곱셈하여 어둡게 표현 */
+  height: 50vh;
+  background-size: cover; /* 이미지를 상위 div에 딱 맞추기 */
+  background-position: center; /* 이미지를 가운데 정렬 */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; /* 가로 가운데 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+}
+
+.picture-text {
+  color: white;
+  display: absolute;
+  font-size: 54px;
+  font-weight: bold;
+}
+
+.sub-content {
+  margin: 0 auto;
+  width: 70%;
+}
+
+#black {
+  background-color: white;
+}
+
+#white {
+  background-color: white;
+}
+
+.second-half{
+  height: 100vh;
+  /* background-color: white; */
+}
+
+.head {
+    margin-bottom: 20px;
+    text-align:start;
+    display: relative
+
+} 
+
+.part {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#hanalogo{
+    width: 232px;
+    height: 220px;
+    /* 1안 */
+    /* background: url(/temp3/hana_logo_white.png) no-repeat; */
+    /* 2안 */
+    background: url(HanaSymbol.png) no-repeat;
+
+    flex: right;
+    margin: 0 auto;
+}
+#family {
+  background: url("https://www.hanafn.com/assets/img/ko/info/img-aboutus-banner.png") no-repeat;
+  /* position: absolute; */
+  left: 0;
+  overflow: hidden;
+  transform: translateX(-40vh);
+  width: calc(80% + 615px);
+  height: 510px;
+  background-size: 80%;
+  border-radius: 0 20px 20px 0;
+}
+
+
+
+.aboutus-list{
+position: relative;
+}
+.overview-top {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+#recruit > .overview-top{
+  color: black;
+}
+.aboutus{
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    /* font-size: 30px; */
+}
+
+.aboutus-content {
+  max-width: 100%;
+  padding: 20px;
+  margin-top: 15vh;
+  border-radius: 5px;
+  display: flex;
+}
+
+
+#recruit-smile {
+  background: url("https://www.hanafn.com/upload/common/upeditor/10000110/20230221//20230221112615095.jpg") no-repeat;
+  /* position: absolute; */
+  right: 0;
+  overflow: hidden;
+  transform: translateX(+20vh);
+  width: calc(70% + 515px);
+  height: 245px;
+  background-size: 100%;
+  /* border-radius:  0 20px 20px 0; */
+  border-radius:  20px 0 0 20px;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
+.image-shape{
+  display:flex;
+  width: 20vw;
+  margin-right: 10vw;
+  align-items: center;
+  /* transition: all 0.5s; */
+}
+
+
+.head#recruit{
+  margin-top: 200px;
+}
+
+.sub-title {
+    /* font-size: 25px;
+    font-weight: bold;
+    margin-top : 0px;
+    margin-bottom: 10px; */
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.text {
+    margin-bottom: px;
+    font-size: 24px;
+}
+#graph{
+  display:flex;
+  width: 70vw;
+  margin-right: 10vw;
+  align-items: center;
+}
+.talents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.left-tit__set{
+  display: flex;
+  margin: 100px 0 100px 0;
+}
+.left-tit{
+  display: flex;
+}
+
+.tit{
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+
+  font-size: 36px;
+  font-weight: 700;
+  word-break: keep-all;
+}
+.editor{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.middle-tit{
+  width: 50vw;
+  color: #666;
+  font-size: 24px;
+}
+.list-row{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  color: #666;
+  font-weight: 700;
+  font-size: 18px;
+}
+  /* 미디어 쿼리 */
+@media screen and (max-width: 600px) {
+    .sub-content {
+    width: 90%;
+    }
+}
