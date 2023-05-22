@@ -13,39 +13,24 @@ body{
     margin-top:0px;
     margin-left:0px;
     margin-right:0px;
-
+    overflow-x: hidden;
 }
 
-#header_frame{
-    width: 100vw;
-    height: 7%;
-    margin-right:auto;
-    margin-left:auto;
+header{
     position: fixed;
-    border:1px solid black;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: black;
+
 }
 
-.gnb{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border: 1px solid;
-    height: 30px;
-    
-}
 
-.nav_item{
-    color:black;
-    font-weight : bold;
-}
 
-/* 
-여기!! */
 .sub_visual_box{
     margin:0 auto;
     position: absolute;
-    border: 1px solid black;
     width: 100%;
     height: 800vh;
 }
@@ -55,7 +40,7 @@ body{
     margin-right: 1px;
     width:100%;
     height: 100%;
-    border: 1px solid red;
+    
 }
 
 
@@ -64,17 +49,68 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    top:200px;
+    top:120px;
     width: 100%;
-    height: 500px;
+    height: 90vh;
 
 }
 
 #dynamic_img{
     height: 100%;
-    width: 500px;
-    border: 1px dotted red;
+    width: 120rem;
+    background-image: url(../resources/backgroundStar.avif);
+    opacity: 0.4;
+}
 
+.arrow_frame{
+    position: relative;
+    top:44rem;
+    margin: auto;
+    width: 5rem;
+    height: 5rem;
+}
+
+.arrow_box{
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    
+}
+
+.s1_arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation:arrow_down 1.5s infinite;}
+
+.scroll-arrow {
+    width:8px; 
+    height:8px; 
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -o-transform: rotate(45deg);  
+    -ms-transform: rotate(45deg);
+    animation: arrow-wave 1s infinite; 
+    animation-direction: alternate;}
+
+
+.scroll-arrow:nth-child(1) {animation-delay: 0.1s;}
+.scroll-arrow:nth-child(2) {margin-top:6px; animation-delay: 0.2s;}
+.scroll-arrow:nth-child(3) {margin-top:6px; animation-delay: 0.3s;}
+
+@keyframes arrow-wave {
+0% {opacity: 0;}
+50% {opacity: .5;}
+100% {opacity: 1;}
+}
+@keyframes arrow_down{
+0%{top:28px;}
+50%{top:40px;}
+100%{top:28px;}
 }
 
 .sub_content_frame{
@@ -101,7 +137,7 @@ body{
     position: relative;
     top:30%;
     margin: 0 auto;
-    width:70%;
+    width:100%;
     height:18%;
     /* border:1px solid black; */
     text-align: center;
@@ -117,7 +153,7 @@ body{
 
 #sub_content_box_top_text h2{
     font-size: 4em;
-    background: linear-gradient(to right top, #f78bc8, #46aff5);
+    background: linear-gradient(to right top, #4A9896, #0afbf3);
     color: transparent;
     -webkit-background-clip: text;
 }
@@ -184,7 +220,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 5%;
-    background-image: url(./image/fintech.jpg);
+    background-image: url(../resources/fintech.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -193,7 +229,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 5%;
-    background-image: url(./image/coding.jpg);
+    background-image: url(../resources/coding.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -202,7 +238,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 5%;
-    background-image: url(./image/digital_hana.jpg);
+    background-image: url(../resources/digital_hana.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -211,7 +247,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 5%;
-    background-image: url(./image/finance_digital.jpg);
+    background-image: url(../resources/finance_digital.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -267,7 +303,7 @@ body{
 #gradient{
     text-align: center;
     font-size: 1em;
-    background: linear-gradient(to right top, #f78bc8, #46aff5);
+    background: linear-gradient(to right top, #4A9896, #0afbf3);
     color: transparent;
     -webkit-background-clip: text;
 }
@@ -291,11 +327,12 @@ body{
 
 .apply_button:hover{
     font-weight: bold;
-    background: linear-gradient(to right top, #f78bc8, #46aff5);
+    background: linear-gradient(to right top, #4A9896, #0afbf3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    
 }
 .apply_button::before {
     content: '';
@@ -322,7 +359,6 @@ box-shadow: inset 300px 0px 0px white;
 
 .bottom_content_frame{
     margin:0 auto;
-    border: 1px solid red;
     width: 100%;
     height: 320vh;
 }
@@ -450,7 +486,7 @@ box-shadow: inset 300px 0px 0px white;
     border-radius: 2em;
     width: 22%;
     height: 30%;
-    background-color: #89DFA0;
+    background-color: #4A9896;
     position: relative;
     bottom:4px
 }
@@ -481,7 +517,7 @@ box-shadow: inset 300px 0px 0px white;
 
 .benefit_carousel_contents_box{
     margin: auto;
-    border: 1px solid #89DFA0;;
+    border: 3px solid #4A9896;
     border-radius: 1em;
     width: 90%;
     height: 50%;
@@ -600,7 +636,7 @@ box-shadow: inset 300px 0px 0px white;
 
 .circle_point{
     position: relative;
-    background-color: #89DFA0;;
+    background-color: #4A9896;
     border-radius: 50%;
     width:10px;
     height:10px;
@@ -610,7 +646,7 @@ box-shadow: inset 300px 0px 0px white;
 }
 .circle_border{
     position: relative;
-    border: 1px solid #89DFA0;
+    border: 2px solid #4A9896;
     border-radius: 50%;
     width:350px;
     height:350px;
@@ -626,7 +662,7 @@ box-shadow: inset 300px 0px 0px white;
     justify-content: center;
     top:-319px;
     left:34px;
-    border:2px solid #89DFA0;
+    border:2px solid #4A9896;
     width:80%;
     height: 80%;
     border-radius: 50%;
@@ -635,15 +671,15 @@ box-shadow: inset 300px 0px 0px white;
 }
 
 #inner_circle_img1{
-    background-image: url(./image/devopsOpac.jpg);
+    background-image: url(../resources/devopsOpac.jpg);
 }
 
 #inner_circle_img2{
-    background-image: url(./image/agileOpac.jpg);
+    background-image: url(../resources/agileOpac.jpg);
 }
 
 #inner_circle_img3{
-    background-image: url(./image/communicationOpac.jpg);
+    background-image: url(../resources/communicationOpac.jpg);
 }
 .inner_circle_title{
     /* border : 1px solid black; */
@@ -705,7 +741,6 @@ box-shadow: inset 300px 0px 0px white;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: 1px solid blue;
     width:100%;
     height: 100vh;
 }
@@ -715,14 +750,12 @@ box-shadow: inset 300px 0px 0px white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     width:100%;
     height: 80vh;
 }
 
 
 .bottom_content_ideal_support_text{
-    color:white;
     width:90%;
     height: 20%;
 }
@@ -773,7 +806,7 @@ box-shadow: inset 300px 0px 0px white;
     width:250px;
     height: 30px; 
     background-size: cover;
-    background-image: url('./image/agencylogo.jpg');
+    background-image: url('../resources/agencylogo.jpg');
 
 }
 
@@ -784,7 +817,7 @@ box-shadow: inset 300px 0px 0px white;
     width:150px;
     height: 30px; 
     background-size: cover;
-    background-image: url('./image/alpacologo.jpg');
+    background-image: url('../resources/alpacologo.jpg');
 }
 
 .support_explanation{
@@ -820,7 +853,7 @@ box-shadow: inset 300px 0px 0px white;
     width:90%;
     height: 240px;
     background-size: cover;
-    background-image: url('./image/eduplace.jpg');
+    background-image: url('../resources/eduplace.jpg');
 }
 
 .eduplace_text{
@@ -832,3 +865,165 @@ box-shadow: inset 300px 0px 0px white;
     font-size: 15px;
 }
 
+.footer_container{
+    height: 40vh;
+    width: 100%;
+}
+
+.footer_contents_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+    height: 30vh;
+    
+}
+
+.footer_title{
+    width: 800px;
+    height: 80px;
+    z-index: 1;
+
+}
+
+.footer_title p{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+em{
+	font-style: normal;
+	color: #4A9896;
+}
+
+.footer_etc{
+    width: 500px;
+    height: 100px;
+}
+
+.footer_etc p{
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+}
+
+/* 기본은 위에 코드이고 1023px 이하부터 아래코드 */
+@media ( max-width: 1700px ){
+    .middle_box_img{
+        width: 85%;
+        height: 40%;
+    }
+
+    .miidle_box_text{
+        width:85%;
+    }
+}
+
+@media ( max-width: 1600px ){
+    .middle_box_img{
+        width: 85%;
+        height: 45%;
+    }
+
+    .miidle_box_text{
+        width:85%;
+    }
+}
+
+@media ( max-width: 1400px ){
+    #sub_content_box_top_text h1{
+        font-size:4em;
+        line-height: 10%;
+        font-weight:700;
+    }
+    
+    #sub_content_box_top_text h2{
+        font-size: 2em;
+
+    }
+
+    .middle_box_img{
+        width: 85%;
+        height: 45%;
+    }
+
+    .miidle_box_text{
+    width:85%;
+    }
+}
+
+@media ( max-width: 1200px){
+
+}
+
+@media ( max-width: 1100px ){
+
+    .middle_box_img{
+        width: 95%;
+        height: 45%;
+    }
+
+    .miidle_box_text{
+
+        width:95%;
+    }
+}
+
+@media ( max-width: 930px ){
+    .middle_box_img{
+        width: 95%;
+        height: 40%;
+    }
+    .miidle_box_text{
+        width:95%;
+        font-size:15px;
+    }
+
+
+}
+
+@media ( max-width: 800px ){
+    .middle_box_img{
+        width: 120%;
+        height: 40%;
+    }
+    .miidle_box_text{
+        width:100%;
+        font-size:13px;
+    }
+}
+
+@media ( max-width: 720px ){
+
+    #sub_content_box_top_text h1{
+        font-size:3em;
+
+    }
+    
+    #sub_content_box_top_text h2{
+        font-size: 1.5em;
+    }
+}
+
+@media ( max-width: 560px ){
+
+    #sub_content_box_top_text h1{
+        font-size:2em;
+
+    }
+    
+    #sub_content_box_top_text h2{
+        font-size: 1em;
+    }
+}
+
+@media ( max-width: 480px ){
+
+
+}

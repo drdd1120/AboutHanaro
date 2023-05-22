@@ -97,4 +97,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         container.style.transform = `translateX(${currentPosition}px)`;
     });
-    });
+});
+
+
+window.addEventListener('scroll', arrowScrollEvent);
+
+function arrowScrollEvent() {
+    const scrollPosition = window.scrollY;
+    const arrowBox = document.querySelector('.arrow_box');
+    const scrollThreshold = window.innerHeight * 5; // 스크롤 위치 임계값 (500vh)
+
+    if (scrollPosition <= scrollThreshold) {
+    arrowBox.style.position = 'absolute';
+    arrowBox.style.top = `${scrollPosition}px`;
+    }
+}
+
+
+
+
+
+
