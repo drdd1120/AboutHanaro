@@ -4,39 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet"> <!--Noto Sans KR 통일 -->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet"> -->
     <title>Document</title>
     <link rel="stylesheet" href="../css/infoOfHanaro.css">
-
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        $("#nav").load("./navBar.html"); // 원하는 파일 경로를 삽입하면 된다]
+        });
+    </script>
     
 </head>
 <body>
     <!-- header 시작-->     
-    <header>
-        <div id="header_frame">
-            <!--로고-->
-            <h1></h1>
-            <!--네비바 안에 텍스트--> 
-            <nav class="gnb">
-                <div class="nav_item">
-                    <span>디지털 하나로 6조</span>
-                </div>
-                <div class="nav_item">
-                    <span>과정소개</span>
-                </div>
-                <div class="nav_item">
-                    <span>팀원소개</span>
-                </div>
-                <div class="nav_item">
-                    <span>고마우신분들</span>
-                </div>
-                <div class="nav_item">
-                    <span>하나은행</span>
-                </div>
-
-            </nav> 
-        </div>
+    <header id="nav">
+        
     </header>
     <!-- header 끝--> 
 
@@ -48,6 +31,16 @@
             <div id="sub_background_img"></div> <!--검은바탕 백그라운드 이미지-->
             <div class="dynamic_img_frame">
                 <div id="dynamic_img"></div>
+            </div>
+        </div>
+
+        <div class="arrow_frame">
+            <div class="arrow_box">
+                <div class="s1_arrow">
+                    <div class="scroll-arrow"></div>
+                    <div class="scroll-arrow"></div>
+                    <div class="scroll-arrow"></div>
+                </div>
             </div>
         </div>
 
@@ -234,8 +227,8 @@
                         <div class="carousel-controls">
                         <!-- <button class="arrow prev">&#9001;</button> -->
                         <button class="arrow prev" title="previous">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.9 50.2">
-                                <path fill="#fff" d="M25.1 50.2L0 25.1 25.1 0l2.8 2.8L5.7 25.1l22.2 22.2z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.9 75.2">
+                                <path fill="#fff" d="M25.1 75.2L0 50.1 25.1 25l2.8 2.8L5.7 50.1l22.2 22.5z" />
                             </svg>
                             </button>
                             <button class="arrow next" title="next">
@@ -391,6 +384,18 @@
 
     <!-- Footer 시작-->
     <footer>
+        <div class="footer_container">
+            <div class="footer_contents_box">
+                <div class="footer_title">
+                    <p>About<em>Hana</em>ro</a></p>
+                </div>
+                <div class="footer_etc">
+                    <p>이용약관 | 개인정보방침 | FAQ<br>
+                        (주)하나은행 사업자등록번호: 000-00-00000
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Footer 끝-->
     <script type="text/javascript" src="../js/infoOfHanaro.js"></script>

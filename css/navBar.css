@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@700&display=swap');
+
+body{
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
 /* navbar */
 :root{
 	--text-color: white;
 	--background-color: rgba(0, 0, 0, 0);
 	--accent-color: #4A9896;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
-
 
 a{
 	text-decoration: none;
