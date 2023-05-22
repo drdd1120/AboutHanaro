@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'hana2-bold';
+    src: url('Hana2.0_OTF/Hana2-Bold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'hana2-cm';
+    src: url('Hana2.0_OTF/Hana2-CM.otf') format('truetype');
+}
+@font-face {
+    font-family: 'hana2-heavy';
+    src: url('Hana2.0_OTF/Hana2-Heavy.otf') format('truetype');
+}
+@font-face {
+    font-family: 'hana2-medium';
+    src: url('Hana2.0_OTF/Hana2-Medium.otf') format('truetype');
+}
+@font-face {
+    font-family: 'hana2-light';
+    src: url('Hana2.0_OTF/Hana2-Light.otf') format('truetype');
+}
+@font-face {
+    font-family: 'hana2-regular';
+    src: url('Hana2.0_OTF/Hana2-Regular.otf') format('truetype');
+}

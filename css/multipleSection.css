@@ -1,0 +1,149 @@
+
+.multiple_container{
+    position: relative;
+    height: auto;
+}
+.multiple_section{
+    /* background-color: #008385; */
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    height: 70vh;
+    overflow-x: hidden;
+}
+.team-list{
+    height: calc(20vw);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    transition: 0.5s ease-out;
+    left: 0;
+}
+.new_team{
+    display: flex;  /* 플렉스 컨테이너 지정 */
+    flex-shrink: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.team-item{
+    flex-basis: 12vw;
+    flex-shrink: 0;
+    /* padding: calc(7vw) 0 calc(7vw); */
+    /* padding: 7vw 0 7vw; */
+    /* min-height: 5vw; */
+    transition: all .4s;
+    z-index: 10;
+    margin: 0 0.5%;
+    border: 2px transparent;
+}
+
+/*새로 작업중인 부분 - 끝*/
+
+.prev{
+    position: absolute;
+    left: -7%;
+    top: calc(50%);
+    z-index: 99;
+    cursor: pointer;
+
+}
+.next{
+    position: absolute;
+    right: -7%;
+    cursor: pointer;
+    top: calc(50%);
+    z-index: 99;
+}
+.controls{
+    text-align: center;      
+
+}
+.controls button{
+    background-color: rgba(39, 183, 159, 0.99);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px;
+    border-radius: 100%;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.team-item:hover{
+    flex-basis: 14vw;
+}
+
+.team-item img{
+    width: 100%;
+    height: 100%;
+    border:6px white solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/*사람 이름 hover : 1초 변경*/
+.team-item:hover h2{ 
+    transition: all 1s ;
+    opacity: 10;
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+.profile{
+    position: relative;
+    overflow: hidden;
+}
+.profile:before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height: 200px;
+}
+.profile-contents{
+    position: absolute;
+    width: 90%;
+    left: 10px;
+    bottom:10px;
+}
+.profile-contents h2{
+    font-size: 35px;
+    color: #ffffff;
+}
+.profile-contents>h2:not(span){
+    text-shadow: 1px 1px #000;
+}
+.profile-contents h2 span{
+    color: #008385;
+    display: block;
+    font-size: 23px;
+}
+.profile-contents p{
+    color: white;
+    font-size: 14px;
+    min-width:  7.375rem;
+    max-height: 0;
+    line-height: 1.2;
+    overflow: hidden;
+    transition-delay: all .3s;
+    opacity: 0;
+    text-shadow: 1px 1px #000;
+}
+.team-item:hover .profile-contents p{
+    max-height: 6em;
+    margin-top: 0.2em;
+    opacity: 1;
+    transition: all 0.6s ease-out; 
+}

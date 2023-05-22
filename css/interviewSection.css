@@ -1,0 +1,164 @@
+   /* 인터뷰 섹션 23.05.21 추가 */
+.section_title, .section_interview{
+    width: 100%;
+    margin-top: 100px;
+    /* height: 100vh; */
+}
+.section_title{
+    display: flex;
+    align-items: center;
+    
+}
+.section_interview{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.interview_list{
+    width: 100%;
+    background: white;
+}
+.section_interview .interview_list > ul > li:first-child {
+    border-top: 2px solid #e5e5e5;
+}
+.section_interview .interview_list > ul > li {
+    position: relative;
+    text-align: left;
+    padding: 80px 0 41px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.review_txt{
+    margin-top: 29px;
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    letter-spacing: -0.5px;
+    color: #4A9896;
+    word-break: keep-all;
+    word-wrap: break-word;
+    font-family: 'hana2-medium';
+
+}
+
+
+.chance_txt{
+    display: block;
+    font-size: 3.6rem;
+    line-height: 5.2rem;
+    letter-spacing: -0.8px;
+    font-family: 'hana2-regular';
+    /* font-family: "NanumSquare", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "NanumSquare", "Malgun Gothic", "맑은 고딕", Dotum, "돋움", sans-serif; */
+    font-weight: 600;
+    color: #000000;
+}
+.profile_info{
+    margin-top: 40px;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    letter-spacing: -0.5px;
+    color: #5e6677;
+}
+
+.interview_list > ul > li .interview_area .profile_info .name_info {
+    float: left;
+    font-family: 'hana2-medium';
+    font-weight: 600;
+}
+.profile_info li{
+    font-family: 'hana2-light';
+}
+.interview_list > ul > li .interview_area .profile_info .sub_info {
+    margin-left: 82px;
+}
+  
+.interview_list > ul > li .interview_area .profile_info .sub_info li + li {
+    margin-top: -1px;
+}
+.interview_list > ul > li .interview_area .btn_text {
+    margin-top: 75px;
+    margin-left: -13px;
+}
+.btn_text.c_black {
+    color: #111;
+}
+.btn_text{
+    height: 6rem;
+    color: #000;
+    font-size: 2.0rem;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    line-height: 6.0rem;
+    text-align: left;
+    padding: 0 22px 0 16px;
+}
+[class*="btn_"] {
+    display: inline-block;
+    vertical-align: top;
+  }
+[class*="btn_"] .inner_txt {
+display: inline-block;
+vertical-align: top;
+}
+
+[class*="btn_"] .inner_txt:only-child {
+display: block;
+}
+
+
+.ico_detail{
+    background-image: url('https://ssl.pstatic.net/static/dm/boostcamp/img/ic-24-detail.svg');
+}
+[class*="btn_"] .ico_detail {
+    margin: 14px 12px 0 4px;
+    }
+.ico_detail {
+        display: inline-block;
+        vertical-align: top;
+        width: 24px;
+        height: 24px;
+        background: url(ic-24-detail.svg) no-repeat;
+        background-size: 100% 100%;
+}
+.main_title{
+    width: 100%;
+    display: flex;
+    font-family: 'hana2-bold';
+    justify-content: center;
+    padding: 8.0rem 0 8.0rem;
+    font-size: 6.6rem;
+    line-height: 10.4rem;
+    letter-spacing: 5px;
+    background: linear-gradient(122deg, #15c79a, #858bd8,rgba(39, 183, 159, 0.99));
+    color: rgba(0,0,0,0);
+    -webkit-background-clip: text;
+    margin: 0 auto;
+}
+
+.sub_title{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    font-size: 4.8rem;
+    font-family: 'hana2-bold';
+    color: #008385;
+    margin-top: 76px;
+    /* margin-bottom: 76px; */
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+}
+
+.img_box{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.img_box img {
+    border: 0;
+    vertical-align: top;
+    width: 244px;
+    height: 244px;
+    overflow: clip;;
+  }
