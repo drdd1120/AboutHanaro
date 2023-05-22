@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고마우신분들</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="thank_you"> <!--전체-->
+        <div class="container" id="sub_content_01">  <!--페이지 소제목 -->
+            <div class="container" id="sub_title">
+                <h3 class="title" style="font-family: 'hana_title';">고마우신분들</h3>
+                <p style="font-family: 'hana_content">하나로 프로그램이 진행될 수 있도록 지원해 주신 분들입니다.<br>
+                    개발, 데이터분석 실력 향상의 기반을 마련해 주셨습니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="container" id="sub_content_02">
+            <div class="box transparent" id="thanks_intro01"> <!--하나로 교육과정 대략소개-->
+                <div class="left_box">Cooperation</div> <!--좌측 박스-->
+                <div class="moving_line"></div>
+                <div class="right_box">
+                    <div class="right_box_inner">
+                        <div class="earth"></div>
+                        <div class="logo" id="hana"></div>
+                    </div>
+                    <div class="right_box_inner">
+                        <div class="earth"></div>
+                        <div class="logo" id="alpaco"></div>
+                    </div>
+                </div> <!--우측 박스-->
+            </div>
+
+            <div class="container" id="thanks_intro01"> <!--강사 소개-->
+                <div class="left_box">Instructor</div> 
+                <div class="moving_line"></div>  <!--스크롤 따라 이동-->
+                <div class="right_box" style="flex-direction: column;">
+                    <div class="flip">  
+                        <div class="card">
+                            <!-- 앞면 -->
+                            <div class="front"></div>
+                            <!-- 뒷면 -->
+                            <div class="back"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="flip">  
+                        <div class="card">
+                            <!-- 앞면 -->
+                            <div class="front">
+                            </div>
+                            <!-- 뒷면 -->
+                            <div class="back">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="container" id="thanks_intro01"> <!--감사의말-->
+                <div class="left_box">Comments</div> <!--좌측 박스-->
+                <div class="moving_line"></div>  <!--스크롤 따라 이동하는 선-->
+                <div class="right_box">
+                    <p>
+                        양방향 강의를 통해 쉽게 이해할 수 있었습니다.<br><br>
+                        체계적 커리큘럼과 전문화된 교육을 받을 수 있었습니다.<br><br>
+                        프로젝트에 대해 논의하며 성장시켜 주었습니다.</p>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            var intros = document.querySelectorAll('#thanks_intro01');
+
+            for (var i = 0; i < intros.length; i++) {
+            var intro = intros[i];
+            var introOffset = intro.offsetTop;
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            var opacity = 0.5 + ((scrollPosition - introOffset + 200) / 300);
+            opacity = Math.min(Math.max(opacity, 0), 1);
+
+            intro.style.opacity = opacity.toString();
+        }
+        });
+    </script>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+</body>
+</html>
+<!--
+    05.14
+    컨텐츠 제작용 프레임 제작 완료
+    예정사항
+    1. 강사 이미지 호버했을 때 스펙 이미지 출력 -> 호버기능 구현 완료
+    2. 강사 프로필 나란히 출력 -> 완료
+    3. 세 번째 컨텐츠 구상
+
+    05.16
+    1. 이미지 호버->onmouseover / onmouseleave로 수정 // 호버 범위 조절 필요
+    2. 첫 번째 컨텐츠 공전궤도 추가
+    3. 세 번째 컨텐츠 -> 텍스트만 있는 것으로 생각중(수강생 코멘트)
+    4. 라인 이동 -> 영역별로 불이 들어오게 하는것으로??
+
+    05.18
+    1. 이미지 호버 시 flip 효과 구현(완)
+    2. 스크롤 하면 컨텐츠 출력하도록(4회 -> 푸터 출력)
+    3. 가로 크기를 줄였을 때의 효과 고려
+    4. 강사 프로필 정보 받아서 넣기
+-->

@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'hana_title';
+    src: url(./Hana2.0_TTF/Hana2-Medium.ttf);
+}
+@font-face {
+    font-family: 'hana_content';
+    src: url(./Hana2.0_TTF/Hana2-Light.ttf);
+}
+body{
+    background-color: black;
+    /* height: 200vh; 임의로 설정 */
+    color:white;
+    font-weight: bold;
+}
+.container{ /*컨테이터 전체*/
+    display:flex;
+    margin: 0 auto;
+    flex-direction: column; /*세로로 출력*/
+    transition: opacity 0.5s ease;
+    /* justify-content: center; 가운데 정렬 */
+}
+#thank_you{  /*전체화면*/
+    width:70vw;
+    height:450vh;
+}
+#sub_content_01{  /*소제목, 부연설명(고마우신분들)*/
+    width:70vw;
+    height: 60vh;
+    text-align: center;
+    border-bottom: 1px solid rgb(65, 65, 65);
+    margin-top: 30vh;
+}
+#sub_title h3{
+    font-size: 4rem; /*반응형 사이즈*/
+    margin-bottom: 0px;
+}
+#sub_title p{
+    font-size:2rem;
+    margin-bottom: 0px;
+}
+
+.sub_content_02{ /*기관, 강사, 코멘트*/
+    width:70vw;
+    height: 350vh; /*각 30vh씩*/
+    display: flex;
+}
+#thanks_intro01{  /*스크롤 했을 때 나오도록*/
+    flex-direction: row;  /*내부 컨텐츠 -> 가로로*/
+    height:110vh;
+    width:70vw;
+    margin-top: 5vh;
+    padding-bottom: 3vh;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(65, 65, 65);
+}
+.box{
+    display:flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.transparent {
+    opacity: 1;
+}
+.opaque {
+    opacity: 0.5;
+}
+.left_box{
+    width:25vw;
+    font-size: 3rem;
+    font-family: 'hana_title';
+    color:#4A9896;
+    text-align: center;
+    line-height: 30vh;
+}
+.moving_line{
+    width:5vw;
+    border-left: 1px solid rgb(65, 65, 65); 
+    /*파란선 동적으로 움직이게 -> jquery 활용해서 구현*/
+}
+.right_box{
+    position:relative;
+    width:40vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.earth {  /*회전하는 궤도*/
+    position: relative;
+    border-style: solid;
+    border-color: rgb(225, 149, 225)
+    transparent 
+    transparent
+    transparent;
+    width: 40vh;
+    height: 40vh;
+    animation: orbit 36.5s
+    linear infinite;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+    display:block;
+    left: 1vw;
+}
+.earth:last-child{  /*회전하는 궤도*/
+    position: relative;
+    border-style: solid;
+    border-color: rgb(105, 210, 105)
+    transparent 
+    transparent
+    transparent;
+    width: 30vh;
+    height: 30vh;
+    animation: orbit_rev 36.5s
+    linear infinite;
+    border-width: 0.2em 0.1em 0 0;
+    border-radius: 50%;
+    display:block;
+    margin-right: 5vw;
+}
+.earth::before{
+    content: '';
+    border-radius: 50%;
+    top: 2.8em;
+    right: 2.8em;
+    background-color: black;
+}
+@keyframes orbit {
+    to{
+        transform: rotate(360deg);
+    }
+}@keyframes orbit_rev {
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.right_box_inner{
+    left:3vw;
+    margin-top: 5vh;
+    position: relative;
+    display: flex;
+}
+/*첫 번째 컨텐츠*/
+#hana{
+    position: absolute;
+    left:7%;
+    top:10%;
+    /* bottom: 20vh; */
+    flex-shrink: 0;
+    background-image: url("./hanabank.png");
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    /* object-fit: cover; */
+    /* padding:2vw; */
+    background-repeat: no-repeat;
+    /* margin-right: 3vw; */
+}
+#alpaco{
+    position: absolute;
+    right:12%;
+    top:11%;
+    flex-shrink: 0;
+    background-image:url("./alpaco.png");
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    /* object-fit: cover;
+    padding:2vw; */
+    background-repeat: no-repeat
+}   
+
+/*카드 뒤집기 효과 참고 https://gurtn.tistory.com/157*/
+.flip { 
+    width: 50vh;
+    height: 50vh;
+    position: relative; 
+    perspective: 1200px;
+    margin: 1rem;
+}
+
+.card {
+    width: 80%; 
+    height: 80%; 
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+} 
+
+.front, .back {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.front {
+    background: url(profile.jpg) no-repeat; 
+    align-items: center;
+    background-size: cover;
+}
+
+.back { 
+    /* text-align: center; */
+    /* align-items: center; */
+    /* left:0; */
+    background: url(spec.png) no-repeat; 
+    transform: rotateY(180deg);
+    background-size: cover;
+}
+
+.flip:hover .card {
+    transform: rotateY(180deg);
+}
+
+#thanks_intro01{
+    font-size: 3vh;
+}
+
