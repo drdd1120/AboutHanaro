@@ -74,32 +74,63 @@ document.addEventListener('DOMContentLoaded', function () {
     const container = carousel.querySelector('.carousel-container');
     const prevArrow = carousel.querySelector('.arrow.prev');
     const nextArrow = carousel.querySelector('.arrow.next');
-    const itemWidth = carousel.querySelector('.carousel-item').offsetWidth; //엘리멘트 크기
-    const itemCount = carousel.querySelectorAll('.carousel-item').length; //3개
+    const items = carousel.querySelectorAll('.carousel-item');
+    const itemCount = items.length;
     let currentPosition = 0;
+    let itemWidth = carousel.querySelector('.carousel-item').offsetWidth; // 초기 아이템 크기
 
-    prevArrow.addEventListener('click', function () {
-        currentPosition += itemWidth;
-        // console.log(currentPosition, itemWidth)
-        // console.log(itemCount)
-        if (currentPosition > 0) {
-        currentPosition = 0;
-        }
-        container.style.transform = `translateX(${currentPosition}px)`; //해당 px로이동
-    });
+    // 캐러셀 항목의 너비 계산
+    function calculateItemWidth() {
+    const carouselWidth = carousel.offsetWidth;
+    let newWidth;
 
-    nextArrow.addEventListener('click', function () {
-        currentPosition -= itemWidth;
-        // console.log(currentPosition, itemWidth)
-        // console.log(itemCount)
-        if (currentPosition < -(itemWidth * (itemCount - 1))) {
-        currentPosition = -(itemWidth * (itemCount - 1));
+    if (carouselWidth <= 900) {
+        if (itemCount <= 3) {
+        // 아이템 개수가 2개 또는 3개일 때는 고정 크기로 유지
+        newWidth = itemWidth;
+        } else {
+        newWidth = carouselWidth;
         }
+    } else {
+        newWidth = 700; // 900px 이상일 때의 너비
+    }
+
+    if (newWidth !== itemWidth) {
+        itemWidth = newWidth;
         container.style.transform = `translateX(${currentPosition}px)`;
+        container.style.width = `${itemWidth * itemCount}px`;
+        items.forEach(function (item) {
+        item.style.width = `${itemWidth}px`;
+        });
+    }
+    }
+
+    // 초기 캐러셀 크기 설정
+    calculateItemWidth();
+
+    // 이전 버튼 클릭 시
+    prevArrow.addEventListener('click', function () {
+    currentPosition += itemWidth;
+    if (currentPosition > 0) {
+        currentPosition = -(itemWidth * (itemCount - 1));
+    }
+    container.style.transform = `translateX(${currentPosition}px)`;
     });
+
+    // 다음 버튼 클릭 시
+    nextArrow.addEventListener('click', function () {
+    currentPosition -= itemWidth;
+    if (currentPosition < -(itemWidth * (itemCount - 1))) {
+        currentPosition = 0;
+    }
+    container.style.transform = `translateX(${currentPosition}px)`;
+    });
+
+    // 윈도우 리사이즈 시 캐러셀 크기 재조정
+    window.addEventListener('resize', calculateItemWidth);
 });
 
-
+// 아래 화살표 중간 고정
 window.addEventListener('scroll', arrowScrollEvent);
 
 function arrowScrollEvent() {
