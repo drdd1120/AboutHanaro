@@ -14,6 +14,7 @@ body{
     margin-left:0px;
     margin-right:0px;
     overflow-x: hidden;
+    transition: all 0.5s ease;
 }
 
 header{
@@ -492,7 +493,7 @@ box-shadow: inset 300px 0px 0px white;
     height: 30%;
     background-color: #4A9896;
     position: relative;
-    bottom:4px
+    bottom:2px
 }
 
 .keyword{
@@ -562,7 +563,7 @@ box-shadow: inset 300px 0px 0px white;
 
 .bottom_content_ideal_talent_frame{
     /* border: 1px solid blue; */
-    width: 20%;
+    width: 100%;
     height: 110vh;
 }
 
@@ -571,32 +572,29 @@ box-shadow: inset 300px 0px 0px white;
     top:9%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
+    align-items: center;
     width: 100%;
     height: 90vh;
 }
 
 .ideal_talent_text_box{
-    /* border: 1px solid blue; */
     width: 100%;
     height: 30vh
 }
 
 .ideal_talent_visual_box{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    /* border: 1px solid blue; */
     width: 100%;
-    height: 50vh
+    height: 50vh;
 }
 
 .ideal_talent_text_content_box1{
     color: white;
     margin: auto;
     /* border:1px solid black; */
-    width:300px;
+    width:800px;
     height: 30%;
 }
 
@@ -610,7 +608,6 @@ box-shadow: inset 300px 0px 0px white;
 }
 
 .spiner_container{
-    /* border:1px solid black; */
     width:350px;
     height: 350px;;
     margin: auto;
@@ -651,6 +648,7 @@ box-shadow: inset 300px 0px 0px white;
 }
 .circle_border{
     position: relative;
+    display: hidden;
     border: 2px solid #4A9896;
     border-radius: 50%;
     width:350px;
@@ -722,7 +720,7 @@ box-shadow: inset 300px 0px 0px white;
     bottom: 50px;
     margin: auto;
     /* border:1px solid black; */
-    width:300px;
+    width:600px;
     height: 40%;
 }
 
@@ -733,7 +731,7 @@ box-shadow: inset 300px 0px 0px white;
     font-weight:900;
 }
 
-.ideal_talent_visula_content_box{
+.ideal_talent_visual_content_box{
     /* border:1px solid black; */
     width:350px;;
     height: 80%;
@@ -993,11 +991,27 @@ em{
         color: white;
         border-radius: 2em;
     }
+}
 
+@media ( max-width: 1250px ){
+    /* 인재상 애니메이션 */
+    .ideal_talent_visual_box{
+        flex-wrap: wrap;
+    }
 
+    .bottom_content_frame{
+        height: 360vh;
+    }
 
+    .bottom_content_ideal_talent_frame{
+        height: 150vh;
+    }
 
-
+    .spiner_container{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top:100px;
+    }
 }
 
 @media ( max-width: 1100px ){
@@ -1039,6 +1053,196 @@ em{
 
 }
 
+@media ( max-width: 910px ){
+    /* 인재상 애니메이션 */
+    .bottom_content_frame{
+        height: 420vh;
+    }
+
+    .bottom_content_ideal_talent_frame{
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 190vh;
+    }
+
+    .ideal_talent_visual_box{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 50vh;
+        margin-top: 400px;
+    }
+
+    
+    /* 타이틀 텍스트 */
+    .ideal_talent_text_content_box1{
+        color: white;
+        margin: auto;
+        /* border:1px solid black; */
+        width:500px;
+        height: 30%;
+    }
+
+    .ideal_title_text{
+        text-align: center;
+        font-size: 38px;
+        font-weight:700;
+    }
+
+    .ideal_talent_text_content_box2{
+        position: relative;
+        bottom: 40px;
+        margin: auto;
+        /* border:1px solid black; */
+        width:500px;
+        height: 40%;
+    }
+    
+    .ideal_text{
+        color: white;
+        text-align: center;
+        /* line-height:25.2px; */
+        font-weight:900;
+    }
+
+    /* 서포트 프레임 재조정 ㄱㄱ */
+
+    .bottom_content_ideal_support_frame{
+        background: white;
+        position: relative;
+        top:3%;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 120vh;
+    }
+    
+    .bottom_content_ideal_support_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 100vh;
+        position: relative;
+        bottom:150px;
+    }
+    
+    
+    .bottom_content_ideal_support_text{
+        width:90%;
+        height: 10%;
+    }
+    
+    .bottom_content_ideal_support_text p{
+        text-align: center;
+        font-size:40px;
+        font-weight:700;
+    
+    }
+    .bottom_content_ideal_support_visual_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width:95%;
+        height: 95%;
+    }
+    
+    .bottom_content_ideal_support_visual_content{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #89DFA0;
+        background-color: #89DFA0;
+        width:90%;
+        height: 30%;
+        border-radius: 10px;
+        
+    }
+    
+    .bottom_content_ideal_support_visual_content p{
+        color:white;
+        text-align: center;
+        font-size:22px;
+        font-weight:600;
+        position: relative;
+        bottom: 5%;
+    }
+    
+    .support_visual_content_box{
+        background-color: white;
+        position: relative;
+        bottom: 10%;
+        width:100;
+        height: 77%;
+    }
+    
+    .support_agency_name1{
+        position: relative;
+        top:5%;
+        margin:auto;
+        width:250px;
+        height: 30px; 
+        background-size: cover;
+        background-image: url('../resources/agencylogo.jpg');
+    
+    }
+    
+    .support_agency_name2{
+        position: relative;
+        top:20px;
+        margin:auto;
+        width:150px;
+        height: 30px; 
+        background-size: cover;
+        background-image: url('../resources/alpacologo.jpg');
+    }
+    
+    .support_explanation{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 45px;
+        height: 90px;
+        position: relative;
+        bottom:15px;
+    }
+    
+    
+    
+    .support_explanation p{
+        color: black;
+        text-align: left;
+        font-size: 15px;
+    }
+    
+    .support_edu_place_visual_box{
+        background-color: white;
+        width:100;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom:9%;
+    }
+    
+    .support_edu_place_visual_content1{
+    
+        margin-top: 10px;
+        background-color: white;
+        width:40%;
+        height: 90%;
+        background-image: url(../resources/finaleduplace.jpg);
+    }
+    
+    .support_edu_place_visual_content2{
+    
+        margin-top: 10px;
+        background-color: white;
+        width:40%;
+        height: 90%;
+        background-image: url(../resources/finalededuuu.jpg);
+    }
+}
+
 @media ( max-width: 900px ){
 
     .middle_box_img{
@@ -1054,57 +1258,54 @@ em{
     .middle_box_left{
         left:-5%;
     }
-    .middle_box_right{
-        right:5%;
-    }
 
+    /* 캐러셀 크기(디테일은 js에서) */
     .carousel {
         width: 700px;
-        height: 600px;
-        position: relative;
-        overflow: hidden;
+    }
+
+    #benefit_keyword{
+        bottom:-4px;
+    }
+
+    #benefit_title{
+        bottom:0px;
+    }
+
+    /* 화살표 */
+    .carousel-controls {
+        top: 40%;
+    }
+
+    /* 캐러셀 안에 텍스트 시작*/
+    .bottom_content_benefit_title_box h2{
+        color: white; 
+        text-align: center;
+        font-size: 3.2em;
+    }
     
+    .benefit_carousel_title_box{
+ 
+        top:2%; 
     }
-        
-        .carousel-container {
-        display: flex;
-        width: 300%;
-        height: 100%;
-        transition: transform 0.5s ease-in-out;
+    
+    #benefit_title h3{
+        font-size: 27px;
     }
-        
-        .carousel-item {
-        flex: 0 0 33.33%;
-        height: 100%;
+    
+    .info_title{
+        font-size: 23px;
     }
-        
-        .carousel-controls {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-        
-        .carousel-controls .arrow {
-        width: 30px;
-        height: 60px;
-        color: #000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        border: none;
-        background: none;
-        font-size: 24px;
-    }
-        
-        .carousel-controls .arrow:hover {
-        color: #666;
-    }
+    
+    .info_text{
+        font-size: 15px;
 
-
+    }
+    
+    .benefit_carousel_sub_contents_box{
+        font-size: 15px;
+    }
+    /* 캐러셀 안에 텍스트 끝 */
 
 }
 
@@ -1133,12 +1334,71 @@ em{
         width: 110%;
         height: 75%;
     }
+}
 
-    .middle_box_right{
-        right:5%;
+
+@media ( max-width: 700px ){
+    /* 캐러셀 크기 */
+    .carousel {
+        width: 500px;
     }
 
+    /* 캐러샐 화살표 */
+    .carousel-controls {
+        top: 35%;
+    }
 
+    /* 캐러셀 안에 박스크기 재조정 */
+    .bottom_content_benefit_carousel_contents_box{
+        width: 80%;
+        height: 70%;
+    }
+
+    /* 오른쪽 튀어나가는 타이틀박스 재조정 */
+    .bottom_content_benefit_title_box{
+        top:7%;
+    }
+
+    #benefit_keyword{
+        bottom:-7px;
+    }
+
+    
+    #benefit_title{
+        bottom:-3px;
+    }
+
+    /* 캐러셀 안에 텍스트 시작*/
+    .bottom_content_benefit_title_box h2{
+        color: white; 
+        text-align: center;
+        font-size: 2.3em;
+    }
+    
+    .benefit_carousel_title_box{
+        position: relative;
+        left:5%;
+        top:2%;
+        /* border: 1px solid red; */
+        width: 600px;
+        height: 15%;
+        
+    }
+    
+    #benefit_title h3{
+        font-size: 18px;
+    }
+    
+    .info_title{
+        font-size: 16px;
+    }
+    
+
+    
+    .benefit_carousel_sub_contents_box{
+        font-size: 10px;
+    }
+    /* 캐러셀 안에 텍스트 끝 */
 
 }
 
@@ -1177,6 +1437,37 @@ em{
     .footer_container{
         height: 30vh;
         width: 100%;
+    }
+
+
+    /* 애니메이션 */
+    /* 타이틀 텍스트 */
+    .ideal_talent_text_content_box1{
+        width:400px;
+    }
+
+    .ideal_title_text{
+        font-size: 26px;
+    }
+
+    .ideal_talent_text_content_box2{
+        position: relative;
+        bottom: 33px;
+        margin: auto;
+        /* border:1px solid black; */
+        width:400px;
+        height: 40%;
+    }
+    
+    .ideal_text{
+        color: white;
+        text-align: center;
+        /* line-height:25.2px; */
+        font-weight:900;
+    }
+
+    .ideal_text br{
+        display:none;
     }
 
 
@@ -1222,6 +1513,198 @@ em{
     
 }
 
+@media ( max-width: 500px ){
+        /* 캐러셀 크기 */
+        .carousel {
+            width: 350px;
+        }
+
+        #benefit_keyword{
+            width: 13%;
+            height: 30%;
+            bottom:-10px;
+        }
+
+        .keyword h4{
+            font-size: 10px;
+            font-weight:bold;
+        }
+
+        #benefit_title{
+            bottom:-10px;
+        }
+
+        /* 캐러셀 안에 텍스트 시작*/
+    .bottom_content_benefit_title_box h2{
+        color: white; 
+        text-align: center;
+        font-size: 1.8em;
+    }
+    
+    .benefit_carousel_title_box{
+        position: relative;
+        left:5%;
+        top:2%;
+        /* border: 1px solid red; */
+        width: 600px;
+        height: 15%;
+        
+    }
+    
+    #benefit_title h3{
+        font-size: 15px;
+    }
+    
+    .info_title{
+        font-size: 14px;
+    }
+
+    .info_text{
+        font-size: 12px;
+
+    }
+
+    #sub_content_box_bottom_frame_applytext h2{
+        color: white;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+
+    
+    .benefit_carousel_sub_contents_box{
+        font-size: 8px;
+        width: 100%;
+    }
+    /* 캐러셀 안에 텍스트 끝 */
+
+    /* 애니메이션 타이틀 텍스트 */
+    .ideal_talent_text_content_box2{
+        display: none;
+    }
+    
+    .ideal_text{
+        display:none;
+    }
+
+    .ideal_talent_text_content_box1{
+        position : relative;
+        bottom:30px;
+        width:300px;
+    }
+
+    .ideal_title_text{
+        text-align: center;
+        font-size: 22px;
+        font-weight:700;
+    }
+
+    .ideal_talent_text_box{
+        height: 2vh
+    }
+
+    .spiner_container{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top:100px;
+    }
+
+    .bottom_content_ideal_talent_frame{
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 180vh;
+    }
+
+    .bottom_content_frame{
+        height: 390vh;
+    }
+
+
+/* 애니메이션 크기 350 -> 250 (가로 최대 250*1.414=350) */
+    .spiner_container{
+        /* border: 1px solid purple; */
+        width:250px;
+        height: 250px;;
+        margin: auto;
+    }
+
+    .square{
+        /* border : 1px solid white; */
+        animation-name:rotate;
+        animation-iteration-count:infinite;
+        animation-play-state: running;
+        animation-timing-function:linear;
+        width:250px;
+        height:250px;
+    }
+
+    .circle_point{
+        position: relative;
+        background-color: #4A9896;
+        border-radius: 50%;
+        width:10px;
+        height:10px;
+        top:-5px;
+        left:120px
+
+    }
+
+    .circle_border{
+        position: relative;
+        display: hidden;
+        border: 2px solid #4A9896;
+        border-radius: 50%;
+        width:250px;
+        height:250px;
+        top:-11px;
+        opacity:0.7;
+    }
+
+    .inner_circle{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top:-226.5px;
+        left:24px;
+        border:2px solid #4A9896;
+        width:80%;
+        height: 80%;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #inner_title_font{
+        color: white;
+        text-align: center;
+        font-weight:700;
+        font-size:18px;
+    }
+
+    #inner_text_font{
+        color: white;
+        text-align: center;
+        font-weight: 800;
+        font-size: 11px;
+    }
+
+    .sub_content_box_bottom{
+        height: 90vh;
+    }
+
+    .sub_content_frame{
+        height: 280vh;
+    }
+
+    .sub_content_box_bottom_frame{
+        top:10%;
+    }
+
+
+}
+
 @media ( max-width: 490px ){
     .middle_box_img{
         width: 105%;
@@ -1229,8 +1712,12 @@ em{
     }
 
     .miidle_box_text{
-        font-size:10px;
+        font-size:14px;
         width:95%;
+    }
+
+    .miidle_box_text p br{
+        display:none;
     }
 
     .middle_box_right{
@@ -1242,17 +1729,16 @@ em{
 
 @media ( max-width: 430px ){
     .middle_box_img{
-        width: 105%;
+        width: 120%;
         height: 75%;
     }
 
-    .miidle_box_text{
-        font-size:9px;
-        width:95%;
+    .middle_box_right{
+        right:4%;
     }
 
-    .middle_box_right{
-        right:-2%;
-    }
+}
+
+@media ( max-width: 350px ){
 
 }
