@@ -5,10 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> 하나은행 정보 </title>
-  <script src="temp3.js"></script>
+  <script src="../js/hanabank.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav").load("./navBar.html"); // 원하는 파일 경로를 삽입하면 된다]
+      });
+    </script>
 </head>
 <body>
-
+  <header id="nav"></header>
   <div class="bg" >
     <div class="bg-image">
     </div>
@@ -22,11 +28,12 @@
     <div class="head" id="overview">
       <div class="second-half">
       <p class="part">overview</p>
-        <p class="overview-top">함께 성장하며 행복을 나누는 금융</p>
+        <p class="overview-top">함께 성장하며<br class="reveal-enter"> 행복을 나누는 금융</p>
       <div class="image" id="hanalogo"></div>
     </div>
     </div>
       <div class="image" id="family"></div>
+      <img src="https://www.hanafn.com/assets/img/ko/info/img-aboutus-banner.png" id="family" alt="">
 
 
     
@@ -38,9 +45,11 @@
     
     <div class="aboutus-content" id="first">
         <div class="image-shape" id="circle">
-          <img src="bg-circle.png" alt="도형1" class="image-shape" id="circle">
+          <!-- <img src="bg-circle.png" alt="도형1" class="image-shape" id="circle"> -->
+          <img src="../resources/bg-circle.png" alt="도형1" class="image-shape" id="circle">
         </div>
         <div class="text-wrap">
+          <img src="../resources/bg-circle.png" alt="도형1" class="reveal" id="circle">
         <p class="sub-title">손님, 직원, 주주,<br> 사회 모두가 행복한 금융</p>
           <p class="text"><b> 하나금융그룹</b>은
               직원들에게 자아 실현의 기회를 제공하고, 손님의 자산증대와 사업의 성장을 돕고, 이를 통해 사회가 번영하는데 일조하며 주주가치를 증대시키는 것을 목적으로 항상 최선을 다하는 금융회사가 되겠습니다.</p>
@@ -51,9 +60,10 @@
       
     <div class="aboutus-content" id="second">
       <div class="image-shape" id="triangle">
-        <img src="bg-triangle.png" alt="도형2" class="image-shape" id="triangle">
+        <img src="../resources/bg-triangle.png" alt="도형2" class="image-shape" id="triangle">
       </div>
         <div class="text-wrap">
+          <img src="../resources/bg-triangle.png" alt="도형2" class="reveal" id="triangle">
         <p class="sub-title">하나로 연결된 <br>모두의 금융</p>
           <p class="text"><b> 하나금융그룹</b>은
             손님, 주주, 사회 모두가 필요로 하는 금융서비스 제공은 물론 모두가 함께 성장할 수 있는 지속가능경영과 사회적 가치 실현을 위해 끊임없이 노력하고 있습니다.</p>
@@ -62,10 +72,11 @@
 
       <div class="aboutus-content" id="third">
         <div class="image-shape" id="square">
-          <img src="bg-square.png" alt="도형3" class="image-shape" id="square">
+          <img src="../resources/bg-square.png" alt="도형3" class="image-shape" id="square">
         </div>
         <div class="text-wrap">
-          <p class="sub-title">아시아 최고 금융그룹으로 도약합니다</p>
+          <img src="../resources/bg-square.png" alt="도형2" class="reveal" id="triangle">
+          <p class="sub-title">아시아 최고 <br>금융그룹으로 도약합니다</p>
           <p class="text">1971년 한국투자금융에서 출발하여, 1991년 하나은행으로의 전환을 거쳐 2005년 종합금융그룹으로 발돋움한 하나금융그룹은 손님 중심 미래형 혁신 사업모델을 기반으로 가치 중심 도약을 추구하여 대한민국을 넘어 <b>아시아 No.1 금융그룹</b>으로 도약하고 있습니다.</p>
         </div>
       </div>
@@ -73,9 +84,11 @@
         
       <div class="head" id="recruit">
           <p class="part">인재상</p>
-          <div class="overview-top">하나금융이 추구하는 인재상은 <br> 비전 달성을 위한 전문역량과 리더십을 겸비한 리더를 말합니다</div>
+          <div class="overview-top" id="hidden-width-498">하나금융이 추구하는 인재상은 <br> 비전 달성을 위한 전문역량과 리더십을 <br>겸비한 리더를 말합니다</div>
+          <div class="overview-top" id="reveal-width-498">하나금융이 추구하는 <br>인재상</div>
       </div>
-      <div class="image" id="recruit-smile"></div>
+    
+      <img src="https://www.hanafn.com/upload/common/upeditor/10000110/20230221//20230221112615095.jpg" id="recruit-smile" alt="">
       <div class="image-graph">
       <img src="https://www.hanafn.com/assets/img/ko/info/img-talent.png" id="graph"alt="">
       </div>
@@ -129,5 +142,5 @@
 
 
 </body>
-<link rel="stylesheet" href="temp3.css">
+<link rel="stylesheet" href="../css/hanabank.css">
 </html>
