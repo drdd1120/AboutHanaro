@@ -6,8 +6,8 @@
 }
 .section_title{
     display: flex;
-    align-items: center;
-    
+    flex-direction: column;
+    /* align-items: center; */
 }
 .section_interview{
     display: flex;
@@ -29,7 +29,12 @@
     padding: 80px 0 41px;
     border-bottom: 1px solid #e5e5e5;
 }
-
+.pc_br{
+    display: block !important;
+}
+.tb_br{
+    display: none;
+}
 .review_txt{
     margin-top: 29px;
     font-size: 2.2rem;
@@ -39,7 +44,8 @@
     word-break: keep-all;
     word-wrap: break-word;
     font-family: 'hana2-medium';
-
+    word-wrap: break-word;
+    word-break: keep-all;
 }
 
 
@@ -118,14 +124,26 @@ display: block;
         vertical-align: top;
         width: 24px;
         height: 24px;
-        background: url(ic-24-detail.svg) no-repeat;
+        background: url(/resources/ic-24-detail.svg ) no-repeat;
         background-size: 100% 100%;
 }
+.left-align{
+    text-align: left !important;
+    padding-left: 10vw;
+}
+.right-align{
+    text-align: right !important;
+    padding-right: 10vw;
+
+}
 .main_title{
-    width: 100%;
+    width: 70%;
+    max-width: 1500px;
     display: flex;
+    position: relative;
     font-family: 'hana2-bold';
-    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
     padding: 8.0rem 0 8.0rem;
     font-size: 6.6rem;
     line-height: 10.4rem;
@@ -133,7 +151,9 @@ display: block;
     background: linear-gradient(122deg, #15c79a, #858bd8,rgba(39, 183, 159, 0.99));
     color: rgba(0,0,0,0);
     -webkit-background-clip: text;
+    background-clip: text;
     margin: 0 auto;
+    /* margin-bottom: 100px; */
 }
 
 .sub_title{
@@ -143,8 +163,8 @@ display: block;
     font-size: 4.8rem;
     font-family: 'hana2-bold';
     color: #008385;
-    margin-top: 76px;
-    /* margin-bottom: 76px; */
+    margin-top: 10rem;
+    text-align: center;
     justify-content: center;
     align-items: center;
     font-weight: 1000;
