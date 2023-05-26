@@ -1,12 +1,16 @@
 /* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@700&display=swap');
 :root{
 	--text-color: white;
 	--background-color: rgba(0, 0, 0, 0);
 	--accent-color: #4A9896;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
-
+body{
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
 
 a{
 	text-decoration: none;
@@ -20,7 +24,7 @@ a{
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
-	background-color: var(--background-color);
+	background-color: transparent;
 	padding:  8px 20px;
 	position:sticky;
 	top:0;

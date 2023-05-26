@@ -5,90 +5,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <link href="../../css/jjh/jjh.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
     <title>JJH MYWEB</title>
     <!-- 아래는 따올 아이콘 들어갈 예정 -->
-    <script
-      src="https://kit.fontawesome.com/38575c408c.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../../js/jjh/jjh.js" type="text/javascript"></script>
 
-    <style>
-      .aboutme{
-        width: 100%;
-        height: 70vh;
-        margin: 0 auto;
-        background-color: aqua;
-      }
-      #box{
-        text-align: center;
-        width: 50%;
-        margin: 0 auto;
-        background-color: red;
-      }
-      #box1{
-        text-align: center;
-        width: 50%;
-        margin: 0 auto;
-        background-color: blue;
-      }
-      #box2{
-        text-align: center;
-        width: 50%;
-        margin: 0 auto;
-        background-color: green;
-      }
-
-    </style>
+    <!-- <script src="../../js/jjh/jjh.js" type="text/javascript"></script> -->
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="navbar__logo">
-          <a href="#">
-            <!-- <i class="fa-light fa-hand-fist"></i> -->
-            <i class="fa-solid fa-fire"></i>
+    <nav class="nav nav--active">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="" class="nav__link">
+            <div class="nav__thumb color1" data-letter="a"></div>
+            <p class="nav__label">AboutMe</p>
           </a>
-        </div>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">
+            <div class="nav__thumb color2" data-letter="s"></div>
+            <p class="nav__label">Skills</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">
+            <div class="nav__thumb color3" data-letter="p"></div>
+            <p class="nav__label">Projects</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">
+            <div class="nav__thumb color4" data-letter="a"></div>
+            <p class="nav__label">Awards</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">
+            <div class="nav__thumb color5" data-letter="c"></div>
+            <p class="nav__label">Contact</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-        <ul class="navbar__menu">
-          <li><a href="#aboutme"></a>ABOUTME</li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#awards">AWARDS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-
-        <ul class="navbar__icons">
-          <li>
-            <a href="https://github.com/drdd1120"
-              ><i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-        </ul>
-
-        <a href="#" class="navbar__toggleBtn">
-          <i class="fa-solid fa-bars"></i>
-        </a>
-      </nav>
-    </header>
-    <!-- <section class="aboutme">
-      <div id="box">
-        <p>정재헌</p><br>
-        <p>포트폴리오</p>
-      </div>
-      <div id="box1">
-        <p>test1</p>
-      </div>
-      <div id="box2">
-        <p>test2</p>
-      </div>
-    </section> -->
+    <div class="page">
+      <section class="section section--active color1" data-letter="a">
+        <article class="section__wrapper">
+          <h1 class="section__title">AboutMe</h1>
+          <div class="grid-container">
+            <div class="grid-item">
+              <div class="aboutme_icon"><i class="fa-solid fa-user"></i></div>
+              <div class="aboutme_text">
+                <div class="hidden">&nbsp;</div>
+                <div class="aboutme_title">이름</div>
+                <div class="aboutme_content">
+                  정재헌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="hidden">&nbsp;</div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="aboutme_icon">
+                <i class="fa-regular fa-calendar-days"></i>
+              </div>
+              <div class="aboutme_text">
+                <div class="hidden">&nbsp;</div>
+                <div class="aboutme_title">생년월일</div>
+                <div class="aboutme_content">
+                  96.11.20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="hidden">&nbsp;</div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="aboutme_icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="aboutme_text">
+                <div class="hidden">&nbsp;</div>
+                <div class="aboutme_title">주소지</div>
+                <div class="aboutme_content">
+                  서울특별시
+                  마포구&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="hidden">&nbsp;</div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="aboutme_icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div class="aboutme_text">
+                <div class="hidden">&nbsp;</div>
+                <div class="aboutme_title">연락처</div>
+                <div class="aboutme_content">010-3271-1104</div>
+                <div class="hidden">&nbsp;</div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="aboutme_icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="aboutme_text">
+                <div class="hidden">&nbsp;</div>
+                <div class="aboutme_title">이메일</div>
+                <div class="aboutme_content">drdd1120@naver.com</div>
+                <div class="hidden">&nbsp;</div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="aboutme_icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="aboutme_text">
+                <div class="hidden">&nbsp;</div>
+                <div class="aboutme_title">학력</div>
+                <div class="aboutme_content">경기대학교 컴퓨터공학부</div>
+                <div class="hidden">&nbsp;</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="section color2" data-letter="s">
+        <article class="section__wrapper">
+          <h1 class="section__title">Skills</h1>
+          <p>Use your 'left' and 'right' arrow keys to navigate.</p>
+        </article>
+      </section>
+      <section class="section color3" data-letter="p">
+        <article class="section__wrapper">
+          <div class="band">
+            <div class="item-1">
+              <a
+                href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852"
+                class="card"
+              >
+                <div
+                  class="thumb"
+                  style="
+                    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);
+                  "
+                ></div>
+                <article>
+                  <h1 id="project_text">
+                    International Artist Feature: Malaysia
+                  </h1>
+                  <span>Mary Winkler</span>
+                </article>
+              </a>
+            </div>
+            <div class="item-1">
+              <a
+                href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852"
+                class="card"
+              >
+                <div
+                  class="thumb"
+                  style="
+                    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);
+                  "
+                ></div>
+                <article>
+                  <h1 id="project_text">
+                    International Artist Feature: Malaysia
+                  </h1>
+                  <span>Mary Winkler</span>
+                </article>
+              </a>
+            </div>
+            <div class="item-1">
+              <a
+                href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852"
+                class="card"
+              >
+                <div
+                  class="thumb"
+                  style="
+                    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg);
+                  "
+                ></div>
+                <article>
+                  <h1 id="project_text">
+                    International Artist Feature: Malaysia
+                  </h1>
+                  <span>Mary Winkler</span>
+                </article>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="section color4" data-letter="a">
+        <article class="section__wrapper">
+          <h1 class="section__title">Awards</h1>
+          <p>Use your 'left' and 'right' arrow keys to navigate.</p>
+        </article>
+      </section>
+      <section class="section color5" data-letter="c">
+        <article class="contact__wrapper">
+          <h1 class="section__title">Contact</h1>
+          <div class="contact-container">
+            <div class="contact-item">
+              <div class="contact_icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact_icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact_icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
   </body>
+  <script
+    src="https://kit.fontawesome.com/38575c408c.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="../../js/jjh/jjh.js" type="text/javascript"></script>
 </html>
