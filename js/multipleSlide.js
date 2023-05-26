@@ -15,8 +15,8 @@ var container = document.querySelector('.multiple_section'),
     nextBtn.addEventListener('click',function(){
         console.log("다음 눌림")
         if(currentIdx<slideCount-1){
-        moveSlide(currentIdx+1);
-        console.log(currentIdx)
+            moveSlide(currentIdx+1);
+            console.log(currentIdx)
         }else{
             moveSlide(0);
         }
@@ -24,16 +24,14 @@ var container = document.querySelector('.multiple_section'),
     prevBtn.addEventListener('click',function(){
         console.log("이전 눌림")
         if(currentIdx>0){
-        moveSlide(currentIdx-1);
-        console.log(currentIdx)
+            moveSlide(currentIdx-1);
+            console.log(currentIdx)
         }else{
             moveSlide(slideCount-1);
             console.log(currentIdx)
         }
     });
     window.addEventListener('resize', function() {
-        // container.style.transition = '0s';
-        // teamSlides.style.transition='0s';
         teamWidth = container.clientWidth;
         moveSlide(currentIdx);
       });

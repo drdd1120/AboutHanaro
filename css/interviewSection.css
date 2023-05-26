@@ -136,25 +136,7 @@ display: block;
     padding-right: 10vw;
 
 }
-.main_title{
-    width: 70%;
-    max-width: 1500px;
-    display: flex;
-    position: relative;
-    font-family: 'hana2-bold';
-    /* align-items: center; */
-    flex-direction: column;
-    padding: 8.0rem 0 8.0rem;
-    font-size: 6.6rem;
-    line-height: 10.4rem;
-    letter-spacing: 5px;
-    background: linear-gradient(122deg, #15c79a, #858bd8,rgba(39, 183, 159, 0.99));
-    color: rgba(0,0,0,0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    margin: 0 auto;
-    /* margin-bottom: 100px; */
-}
+
 
 .sub_title{
     display: flex;

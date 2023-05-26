@@ -6,6 +6,12 @@
             margin: 0;
             padding: 0;
         }
+        
+        html{
+            font-size: 10px;
+            /* max-width: 1700px; */
+            margin: 0 auto;
+        }
         header{
             position: fixed;
             top: 0;
@@ -18,20 +24,25 @@
             color: inherit;
             text-decoration: none;
         }
-        .GNB{
+        .main_title{
+            width: 70%;
+            max-width: 1500px;
+            display: flex;
             position: relative;
-            width: 100%;
-            color: white;
-            text-align: center;
-            font-size: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        html{
-            font-size: 10px;
-            /* max-width: 1700px; */
+            font-family: 'hana2-bold';
+            /* align-items: center; */
+            flex-direction: column;
+            padding: 8.0rem 0 8.0rem;
+            font-size: 6.6rem;
+            line-height: 10.4rem;
+            letter-spacing: 5px;
+            background: linear-gradient(122deg, #15c79a, #858bd8,rgba(39, 183, 159, 0.99));
+            color: rgba(0,0,0,0);
+            -webkit-background-clip: text;
+            background-clip: text;
             margin: 0 auto;
         }
+
         body{ 
             color: #999;
             overflow-y: scroll;
@@ -146,6 +157,10 @@
                 line-height: 10.4rem;
                 letter-spacing: 5px;
             }
+            .sub_title{
+                padding: 40px 0 80px;
+                letter-spacing: -0.8px;
+            }
             .chance_txt{
                 font-size: 2.2rem;
                 line-height: 3.4rem;
@@ -192,6 +207,15 @@
             .profile_info .sub_info li + li {
              margin-top: -1px;
             }
+            button {
+                width: 19px;
+                left: -30px;
+              }
+            .button--next {
+                left: auto;
+                right: -30px;
+                transform: translate3d(0, -50%, 0) rotate(180deg);
+            }
         }
     @media(max-width:940px){
         .main_title{
@@ -207,18 +231,21 @@
             letter-spacing: -0.8px;
         }
         .new_team{
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             flex-direction: row;
-            flex-basis: 100%;
-            justify-content:center;
+            flex-basis: calc(117.8%);
+            justify-content;
         }
         .team-item{
-            flex-basis: 40%;
+            flex-basis: 39.9%;
             flex-grow: 0;
             /* width: calc(50%-10px); */
         }
         .team-item:hover{
-            flex-basis: 50%;
+            flex-basis: 41%;
+        }
+        .profile-contents h2{
+            font-size: calc(3.0vw);
         }
         .profile-contents h2 span{
             font-size: calc(3.0vw);
@@ -298,6 +325,10 @@
         #interview_title{
             font-size: 2.4rem;
             letter-spacing: -1.9px;
+        }
+        .chance_txt{
+            font-size: 1.9rem;
+            line-height: 3.2rem;
         }
         
     }
