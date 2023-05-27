@@ -11,6 +11,7 @@
             font-size: 10px;
             /* max-width: 1700px; */
             margin: 0 auto;
+            min-height: 3100px;
         }
         header{
             position: fixed;
@@ -61,7 +62,7 @@
             color: #008385;
         }
         /* //justify-content = center algn-items 공통 */
-        .backgroundBanner, .content,.content1{
+        .backgroundBanner, .content,.section_portfolio{
             margin: 0 auto;
             flex-direction: column;
             align-items: center;
@@ -75,8 +76,37 @@
             background-color: #000;
             height: 100vh;
             flex-wrap: nowrap;
+            min-height: 667px;
+        }
+        
+        .sub_title{
+            display: flex;
+            width: 100%;
+            height: 30vh;
+            font-size: 4.8rem;
+            font-family: 'hana2-bold';
+            color: #008385;
+            margin-top: 10rem;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-weight: 1000;
+            padding-bottom: 70px;
+        }
+        #sub_title_bg{
+            position: relative;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            object-fit: fill;
+            border-radius: 10000px;
+            margin-bottom: 10px;
+            /* border: #008385 calc(0.5vw) solid; */
         }
         .content{
+            max-width: 1920px;
+        }
+        .section_portfolio{
             max-width: 1700px;
             margin: 0 auto;
             position: relative;
@@ -86,6 +116,7 @@
             flex-direction: column;
             align-items: center;
         }
+
         .sub_title_br{
             display: none;
         }
@@ -216,6 +247,16 @@
                 right: -30px;
                 transform: translate3d(0, -50%, 0) rotate(180deg);
             }
+            .interview_list{
+                width: 100%;
+                padding: 0 30px 215px;
+            }
+            .profile-contents h2{
+                font-size: 1.8rem;
+            }
+            .profile-contents h2 span{
+                font-size: 1.4rem;
+            }
         }
     @media(max-width:940px){
         .main_title{
@@ -231,10 +272,8 @@
             letter-spacing: -0.8px;
         }
         .new_team{
-            /* flex-wrap: wrap; */
             flex-direction: row;
             flex-basis: calc(117.8%);
-            justify-content;
         }
         .team-item{
             flex-basis: 39.9%;
@@ -259,8 +298,11 @@
         }
         .sub_title{
             padding: 40px 0 40px;
-            font-size: 3.5rem;
-            line-height: 4.0rem;
+            font-size: 3.4rem;
+            line-height: 5.0rem;
+        }
+        #sub_title_bg{
+            display: none;
         }
         .chance_txt{
             font-size: 2.0rem;
@@ -291,14 +333,17 @@
             width: 140px;
             height: 140px;
         }
+
     } 
     @media (max-width:660px){
         .sub_title{
             font-size: 2.8rem;
             padding: 0 0 0;
         }
+
     }
     @media (max-width:556px){
+
         /* 메인 타이틀 작업, 서브 타이틀 작업 */
         .main_title{
             font-size: 2.8rem;
@@ -313,6 +358,9 @@
         }
         .sub_title_br2{
             display: none;
+        }
+        .team-list{
+            padding: 0 0;
         }
     }
     @media (max-width:480px){

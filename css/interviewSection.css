@@ -17,7 +17,7 @@
 }
 
 .interview_list{
-    width: 100%;
+    width: 1200px;
     background: white;
 }
 .section_interview .interview_list > ul > li:first-child {
@@ -138,19 +138,7 @@ display: block;
 }
 
 
-.sub_title{
-    display: flex;
-    width: 100%;
-    height: 30vh;
-    font-size: 4.8rem;
-    font-family: 'hana2-bold';
-    color: #008385;
-    margin-top: 10rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-weight: 1000;
-}
+
 
 .img_box{
     position: absolute;

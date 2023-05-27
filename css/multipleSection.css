@@ -3,14 +3,13 @@
     position: relative;
     height: auto;
 }
+
 .multiple_section{
     border-radius: 15px;
     display: flex;
     width: 100%;
     justify-content: center;
-    /* align-items: flex-start; */
-    height: auto;
-    padding: 40px 0;
+    height: 70%;
     overflow-x: hidden;
 }
 .team-list{
@@ -32,12 +31,6 @@
     align-items: center;
     justify-content: flex-start;
 }
-/* .new_team .team-item:nth-child(1){
-    margin-left: 0;
-}
-.new_team .team-item:last-child{
-    margin-right: 0;
-} */
 .team-item{
     flex-basis: calc(17.8%);
     flex-shrink: 0;
@@ -46,10 +39,25 @@
     margin: 0 1%;
     border: 2px transparent;
 }
+.team-item img{
+    width: 100%;
+    height: 100%;
+    border:6px white solid;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
 .team-item:hover{
     flex-basis: calc(19.5%);
     transition: all 0.4s;
 }
+
+/*사람 이름 hover : 1초 변경*/
+.team-item:hover h2{ 
+    transition: all 1s ;
+    opacity: 10;
+}
+
 /*새로 작업중인 부분 - 끝*/
 
 button {
@@ -78,19 +86,8 @@ button {
     transform: translate3d(0, -50%, 0) rotate(180deg);
   }
 
-.team-item img{
-    width: 100%;
-    height: 100%;
-    border:6px white solid;
-    box-sizing: border-box;
-    border-radius: 15px;
-}
 
-/*사람 이름 hover : 1초 변경*/
-.team-item:hover h2{ 
-    transition: all 1s ;
-    opacity: 10;
-}
+
 .link{
     padding: 0;
     margin: -4px;
@@ -118,7 +115,8 @@ button {
 }
 .profile-contents h2{
     position: relative;
-    font-size: calc(1.5vw);
+    /* font-size: calc(1.5vw); */
+    font-size: 2.5rem;
     /* font-size: calc(1.6vw); */
     color: #ffffff;
 }
@@ -128,7 +126,8 @@ button {
 .profile-contents h2 span{
     color: #008385;
     display: block;
-    font-size: calc(1.2vw);
+    /* font-size: calc(1.2vw); */
+    font-size: 1.8rem;
     white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
 }
 .profile-contents p{
