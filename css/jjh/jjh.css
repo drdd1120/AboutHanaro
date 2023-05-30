@@ -28,6 +28,7 @@ ul {
   position: sticky;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   z-index: 1;
   background: #1a1a1a;
@@ -104,9 +105,10 @@ ul {
   will-change: transform;
   position: absolute;
   width: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
-  height: 100vh;
+  bottom: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -125,26 +127,30 @@ ul {
 }
 .section__wrapper {
   width: 100%;
+  height: auto;
   padding: 0 8vw;
   position: relative;
 }
+
+#skill_wrapper{
+  width: 100%;
+  height: 100vh;
+  padding: 0 8vw;
+  position: relative;
+  overflow: auto;
+}
+
+#skill_wrapper::-webkit-scrollbar{
+  display: none;
+}
+
 .section__title {
   margin: 0 0 25px 0;
+  margin-top: 30px;
   font-size: 48px;
-  font-weight: normal;
-  text-transform: uppercase;
   letter-spacing: 5px;
 }
-.section__title:before {
-  content: '';
-  position: absolute;
-  top: 5rem;
-  left: 45%;
-  margin: auto;
-  width: 10%;
-  height: 2px;
-  background: #fff;
-}
+
 @media (max-width: 720px) {
   .section__title {
     font-size: 28px;
@@ -223,7 +229,37 @@ html {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
-  
+}
+
+.award_band {
+  width: 90%;
+  height: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.skill_container{
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: flex;
+  width: 80%;
+  height: auto;
+  background-color: #ffffff;
+  border: transparent;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.skill_img{
+  margin: 0 auto;
+  padding: 10px;
+  width: 150px;
+  height: auto;
 }
 
 @media only screen and (min-width: 500px) {
@@ -241,6 +277,9 @@ html {
 @media only screen and (min-width: 850px) {
   .band {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .award_band{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -356,3 +395,18 @@ html {
   margin: 0 auto;
 }
 
+.hover_text{
+  padding: 15px 20px;
+  background-color: #444444;
+  color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+}
+
+.contact_icon:hover + .hover_text{
+	/* background-color: transparent;
+	border-radius: 5px;
+	transform: scale(1.2); */
+  display: block;
+}

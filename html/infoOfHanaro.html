@@ -4,39 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet"> <!--Noto Sans KR 통일 -->
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet"> -->
     <title>Document</title>
     <link rel="stylesheet" href="../css/infoOfHanaro.css">
-
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        $("#nav").load("./navBar.html"); // 원하는 파일 경로를 삽입하면 된다]
+        });
+    </script>
     
 </head>
 <body>
     <!-- header 시작-->     
-    <header>
-        <div id="header_frame">
-            <!--로고-->
-            <h1></h1>
-            <!--네비바 안에 텍스트--> 
-            <nav class="gnb">
-                <div class="nav_item">
-                    <span>디지털 하나로 6조</span>
-                </div>
-                <div class="nav_item">
-                    <span>과정소개</span>
-                </div>
-                <div class="nav_item">
-                    <span>팀원소개</span>
-                </div>
-                <div class="nav_item">
-                    <span>고마우신분들</span>
-                </div>
-                <div class="nav_item">
-                    <span>하나은행</span>
-                </div>
-
-            </nav> 
-        </div>
+    <header id="nav">
+        
     </header>
     <!-- header 끝--> 
 
@@ -44,10 +27,20 @@
     <!-- Container 시작-->    
     <div class="container">
 
-        <div class="sub_visual_box">
-            <div id="sub_background_img"></div> <!--검은바탕 백그라운드 이미지-->
+        <!-- <div class="sub_visual_box">
+            <div id="sub_background_img"></div> 
             <div class="dynamic_img_frame">
                 <div id="dynamic_img"></div>
+            </div>
+        </div> -->
+
+        <div class="arrow_frame">
+            <div class="arrow_box">
+                <div class="s1_arrow">
+                    <div class="scroll-arrow"></div>
+                    <div class="scroll-arrow"></div>
+                    <div class="scroll-arrow"></div>
+                </div>
             </div>
         </div>
 
@@ -188,15 +181,15 @@
                                     <div class="benefit_carousel_contents_box">
                                         <div class="info_title"><br>기업의 니즈를 반영한 커리큘럼</div><br>
                                         <div class="info_text">
-                                            본 과정 수료시 하나금융그룹 14개 관계사에 채용우대혜택 및 하나은행 디지털/ICT 현직자 프로그램을 제공합니다.<br>
+                                            - Web : HTML, CSS3, JavaScript<br>
+                                            - Front-end : React<br>
+                                            - Back-end : Spring MVC, MyBatis
                                         </div>
                                             
                                     </div>
                                     <div class="benefit_carousel_sub_contents_box">
-                                        - 하나은행 금융서비스 이용 손님을 위한 고객 투자성향과 현재 포트폴리오를 분석하여 개선사항을
-                                        추천하는 웹 서비스 구현<br>
-                                        - 금융감독원 통합연금포털 정보와 행 내 퇴직연금 정보를 활용한 고객 연금 구성 및 예상 수령액
-                                        시뮬레이션 웹 서비스 구현<br>
+                                        - 고객 금융 포트폴리오 분석 및 웹 구현<br>
+                                        - 금감원 오픈 API활용 연금 서비스 웹 구현<br>
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +228,7 @@
                         <!-- <button class="arrow prev">&#9001;</button> -->
                         <button class="arrow prev" title="previous">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.9 50.2">
-                                <path fill="#fff" d="M25.1 50.2L0 25.1 25.1 0l2.8 2.8L5.7 25.1l22.2 22.2z" />
+                                <path fill="#fff" d="M25.1 0L0 25.1 25.1 50.2 27.9 47.4 10.6 25.2 27.9 2.7z" />
                             </svg>
                             </button>
                             <button class="arrow next" title="next">
@@ -246,7 +239,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bottom_content_ideal_talent_frame">
+            <div class="bottom_content_ideal_talent_frame"> 
                 <div class="bottom_content_ideal_talent_box">
                     <span class="ideal_talent_text_box">
                         <div class="ideal_talent_text_content_box1">
@@ -368,18 +361,7 @@
                                 </div>
                             </div>
                         </span>
-                        <span class="bottom_content_ideal_support_visual_content">
-                            <p>교육장소</p>
-                            <div class="support_edu_place_visual_box">
-                                <div class="support_edu_place_visual_content">
-                                    <div class="edu_place_img">
-                                </div>
-                                <div class="eduplace_text">
-                                    <p>성수역 1번출구 50M 근방</p>
-                                </div>
-        
-                            </div>
-                        </span>
+                        
                     </div>
                 </div>
             </div>
@@ -391,6 +373,18 @@
 
     <!-- Footer 시작-->
     <footer>
+        <div class="footer_container">
+            <div class="footer_contents_box">
+                <div class="footer_title">
+                    <p>About<em>Hana</em>ro</a></p>
+                </div>
+                <div class="footer_etc">
+                    <p>이용약관 | 개인정보방침 | FAQ<br>
+                        (주)하나은행 사업자등록번호: 000-00-00000
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Footer 끝-->
     <script type="text/javascript" src="../js/infoOfHanaro.js"></script>

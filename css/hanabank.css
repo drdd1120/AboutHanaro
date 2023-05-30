@@ -1,13 +1,25 @@
-/* 공통 스타일 */
-/* body {
-  margin: 0px;
-  background-color: black;
+body{
+  overflow-x: hidden;
+}
 
-} */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-background{
+  transition: background-color 2s ease;
+  background-color: #666;
+}
 body {
   margin: 0px;
   transition: background-color 2s ease;
+  /* background-color: black; */
   background-color: black;
+
 }
 
 .scroll-background {
@@ -72,19 +84,19 @@ body {
     /* 1안 */
     /* background: url(/temp3/hana_logo_white.png) no-repeat; */
     /* 2안 */
-    background: url(HanaSymbol.png) no-repeat;
+    /* background: url(/resources/HanaSymbol.png) no-repeat; */
 
     flex: right;
     margin: 0 auto;
 }
 #family {
-  background: url("https://www.hanafn.com/assets/img/ko/info/img-aboutus-banner.png") no-repeat;
-  /* position: absolute; */
+  /* background: url("https://www.hanafn.com/assets/img/ko/info/img-aboutus-banner.png") no-repeat; */
+  position: realtive;
   left: 0;
   overflow: hidden;
-  transform: translateX(-40vh);
-  width: calc(80% + 615px);
-  height: 510px;
+  transform: translateX(-15vw);
+  width: 70vw;
+  height: auto;
   background-size: 80%;
   border-radius: 0 20px 20px 0;
 }
@@ -93,12 +105,17 @@ body {
 
 .aboutus-list{
 position: relative;
+
 }
 .overview-top {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
     color: white;
+    line-height: 50px;
+}
+#reveal-width-498{
+  display:none;
 }
 #recruit > .overview-top{
   color: black;
@@ -120,27 +137,40 @@ position: relative;
 
 
 #recruit-smile {
-  background: url("https://www.hanafn.com/upload/common/upeditor/10000110/20230221//20230221112615095.jpg") no-repeat;
-  /* position: absolute; */
+  /* background-size: contain; */
+  position: relative;
   right: 0;
   overflow: hidden;
-  transform: translateX(+20vh);
-  width: calc(70% + 515px);
-  height: 245px;
-  background-size: 100%;
-  /* border-radius:  0 20px 20px 0; */
-  border-radius:  20px 0 0 20px;
+  transform: translateX(+15vw);
+  height: 200px;
+  background-size: cover;
+  border-radius: 20px 0 0 20px;
   margin-top: 10vh;
-  margin-bottom: 20vh;
+  margin-bottom: 30vh; 
+  width: 70vw;
+  height: auto;
 }
 .image-shape{
-  display:flex;
+  /* display:flex; */
+  margin: auto;
+  float: left;
   width: 20vw;
-  margin-right: 10vw;
+  margin-right: 10vh;
   align-items: center;
+  object-fit: contain;
   /* transition: all 0.5s; */
 }
-
+.reveal{
+  /* display: block; */
+  display: none;
+}
+.reveal-enter{
+  display: none;
+}
+.reveal-text{}
+.text-wrap{
+  float: right;
+}
 
 .head#recruit{
   margin-top: 200px;
@@ -163,7 +193,6 @@ position: relative;
 #graph{
   display:flex;
   width: 70vw;
-  margin-right: 10vw;
   align-items: center;
 }
 .talents {
@@ -174,6 +203,7 @@ position: relative;
 }
 .left-tit__set{
   display: flex;
+  flex-direction: row;
   margin: 100px 0 100px 0;
 }
 .left-tit{
@@ -209,8 +239,125 @@ position: relative;
   font-size: 18px;
 }
   /* 미디어 쿼리 */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .sub-content {
     width: 90%;
     }
+} */
+
+@media screen and (max-width: 1230px){
+  #family ,#recruit-smile{
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    width: 100%;
+    background-size: contain;
+    background-size: 100%;
+    border-radius: 20px;
+    transform: translateX(0);
+  }
+  
+
+}
+
+@media screen and (max-width:1000px){
+  .image-shape{
+    display: none;
+  }
+  
+  .reveal{
+    display: flex;
+    margin: 0 auto;
+    width: 30vw;
+    object-fit: contain;
+    /* display: none; */
+  }
+}
+@media screen and (max-width:851px){
+  .overview-top,.sub-title{
+    font-size: 30px;
+  }
+
+  p.text, p.tit{
+    font-size: 20px;
+  }
+  .left-tit__set{
+    flex-direction: column;
+    margin-left: 0px;
+    }
+    .editor {
+    margin-left: 0px;
+    }
+    p.tit{
+      margin-left: 0px;
+    }
+    p.middle-tit {
+      width: 70vw;
+    }
+  
+}
+@media screen and (max-width:600px){
+
+.reveal{
+  display: none;
+}
+#graph{
+  width: 90vw;
+  display: none;
+}
+
+#recruit-smile{
+  margin-bottom: 3vh;
+}
+}
+
+@media screen and (max-width:652px){
+
+}
+@media screen and (max-width:639px){
+  .sub-content{
+    width: 90%;
+  }
+  p.middle-tit {
+    width: 90vw;
+}
+  #graph{
+    width: 90vw;
+    display: none;
+}
+  .list-row{
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width:488px){
+.list-row{
+  display: none;
+}
+.left-tit__set{
+  margin: 10px;
+}
+
+}
+
+
+@media screen and (max-width:439px){
+.reveal-enter{
+  display: inline;
+}
+}
+@media screen and (max-width:497px){
+  #reveal-width-498{
+    display:inline;
+  }
+  #hidden-width-498{
+    display: none;
+  }
+}
+
+@media screen and (max-width:360px){
+p.sub-title{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
 }

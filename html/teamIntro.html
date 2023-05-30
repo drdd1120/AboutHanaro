@@ -5,27 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>(팀원 소개 페이지)ver2</title>
-    <link rel="stylesheet" type="text/css" href="teamIntro.css">
+    <link rel="stylesheet" type="text/css" href="../css/teamIntro.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav").load("./navBar.html"); // 원하는 파일 경로를 삽입하면 된다]
+      });
+    </script>
 </head>
 <body>
     <div class="wrap">
-        <header>
-                <div class="GNB"> GNB</div>
-        </header>   
+        <header id="nav"></header>   
         <div class="backgroundBanner">
             <section class="section_title">
-                
                 <h3 class="main_title">
-                    “ &nbsp;Digital Hana 路
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp; 최고의 동료와 함께
-                    <br class="mo_br">
-                    &nbsp; &nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;금융업 디지털 전문가로 <br> 성장하는 곳 &nbsp;”
-                
+                    <div class="left-align">“Digital Hana 路</div>
+                    <div class="right-align">최고의 동료와 함께</div>
+                    <div class="left-align">&nbsp;금융업 디지털 전문가로</div>
+                    <div class="right-align">성장하는 곳”</div>
                 </h3>
-
-
             </section>
             <div class="arrow_frame">
                 <div class="arrow_box">
@@ -41,7 +39,8 @@
     <div class="container">
             <div class="content">
                 <div class="content1">
-                    <h2 class=" sub_title">Digital Hana 人 들의 이야기와<br> &nbsp;&nbsp;포트폴리오를 만나보세요.</h2>
+                    <h2 class=" sub_title">Digital Hana 人 들의 <br class="sub_title_br">이야기와
+                        <br class="sub_title_br2">포트폴리오를 <br class="sub_title_br">만나보세요.</h2>
                         <div class="multiple_container">
                             <div class="left-btn">
                                 <p class="controls">
@@ -57,9 +56,9 @@
                             <div class="team-list">
                                     <ul class="new_team">
                                         <li class="team-item">
-                                            <a href="페이지.html" class="link">
+                                            <a href="../html/jjh/jjh.html" class="link">
                                                 <div class="profile profile_red">
-                                                    <img src="images/sample2(16-9).jpg" alt="팀 이미지 1" href>
+                                                    <img src="/resources/sample2(16-9).jpg" alt="팀 이미지 1" href>
                                                     <div class="profile-contents">
                                                         <h2>한성훈<span>디지털 하나로 1기</span></h2>
                                                         <p>회사에서는 월급 받고 집에서는 취미로 코딩하는 개발자
@@ -70,7 +69,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_beige">
-                                                <img src="images/sample1(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample1(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2 class="highlight">최안식<span>디지털 하나로 1기</span></h2>
                                                     <p>수원에서 성수까지 왕복 네시간 출퇴근하는 성실한 개발자.
@@ -80,7 +79,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_green">
-                                                <img src="images/sample3(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample3(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2>황영하<span>디지털 하나로 1기</span></h2>
                                                     <p>중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하
@@ -95,7 +94,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_pink">
-                                                <img src="images/sample4(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample4(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2>차성산<span>디지털 하나로 1기</span></h2>
                                                     <p>중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하
@@ -110,7 +109,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_pink">
-                                                <img src="images/sample5(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample5(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2>정재헌<span>디지털 하나로 1기</span></h2>
                                                     <p>중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하
@@ -128,9 +127,9 @@
                                         <li class="team-item">
                                             <a href="페이지.html" class="link">
                                                 <div class="profile profile_red">
-                                                    <img src="images/sample2(16-9).jpg" alt="팀 이미지 1" href>
+                                                    <img src="/resources/sample2(16-9).jpg" alt="팀 이미지 1" href>
                                                     <div class="profile-contents">
-                                                        <h2>한성훈<span>디지털 하나로 1기</span></h2>
+                                                        <h2>한성훈<span>디지털 하나로 2기</span></h2>
                                                         <p>회사에서는 월급 받고 집에서는 취미로 코딩하는 개발자
                                                         </p>
                                                     </div>
@@ -139,7 +138,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_beige">
-                                                <img src="images/sample1(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample1(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2 class="highlight">최안식<span>디지털 하나로 1기</span></h2>
                                                     <p>수원에서 성수까지 왕복 네시간 출퇴근하는 성실한 개발자.
@@ -149,7 +148,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_green">
-                                                <img src="images/sample3(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample3(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2>황영하<span>디지털 하나로 1기</span></h2>
                                                     <p>중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하
@@ -164,7 +163,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_pink">
-                                                <img src="images/sample4(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample4(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2>차성산<span>디지털 하나로 1기</span></h2>
                                                     <p>중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하
@@ -179,7 +178,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_pink">
-                                                <img src="images/sample5(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample5(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2>정재헌<span>디지털 하나로 1기</span></h2>
                                                     <p>중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하
@@ -197,7 +196,7 @@
                                         <li class="team-item">
                                             <a href="페이지.html" class="link">
                                                 <div class="profile profile_red">
-                                                    <img src="images/sample2(16-9).jpg" alt="팀 이미지 1" href>
+                                                    <img src="/resources/sample2(16-9).jpg" alt="팀 이미지 1" href>
                                                     <div class="profile-contents">
                                                         <h2>한성훈<span>디지털 하나로 1기</span></h2>
                                                         <p>회사에서는 월급 받고 집에서는 취미로 코딩하는 개발자
@@ -208,7 +207,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_beige">
-                                                <img src="images/sample1(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample1(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2 class="highlight">최안식<span>디지털 하나로 1기</span></h2>
                                                     <p>수원에서 성수까지 왕복 네시간 출퇴근하는 성실한 개발자.
@@ -218,7 +217,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_green">
-                                                <img src="images/sample3(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample3(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2>황영하<span>디지털 하나로 1기</span></h2>
                                                     <p>중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하
@@ -233,7 +232,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_pink">
-                                                <img src="images/sample4(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample4(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2>차성산<span>디지털 하나로 1기</span></h2>
                                                     <p>중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하
@@ -248,7 +247,7 @@
                                         </li>
                                         <li class="team-item">
                                             <div class="profile profile_pink">
-                                                <img src="images/sample5(16-9).jpg" alt="팀 이미지 1">
+                                                <img src="/resources/sample5(16-9).jpg" alt="팀 이미지 1">
                                                 <div class="profile-contents">
                                                     <h2>정재헌<span>디지털 하나로 1기</span></h2>
                                                     <p>중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하
@@ -267,8 +266,9 @@
                         </div>
                 </div>
                 <section class="section_interview">
-                    <h2 class=" sub_title">
+                    <h2 class=" sub_title" id="interview_title">
                         "Digital Hana 人이 말하는"
+                        <br id="interview_title_br">
                         Digital Hana 路
                     </h2>
                     <div class="interview_list">
@@ -295,7 +295,7 @@
                                         </ul>
                                     </div>
                                     <a href="https://blog.naver.com/boostcamp_official/222682870724" role="button" class="btn_text c_black" target="_blank">
-                                        <i class="images/ico_detail"></i>
+                                        <i class="ico_detail"></i>
                                         <span class="inner_text">인터뷰 자세히 보기 </span>
                                     </a>
                                 </div>
@@ -371,5 +371,5 @@
     </div>
 </body>
 
-    <script src="multipleSlide.js"></script>
+    <script src="../js/multipleSlide.js"></script>
 </html>
