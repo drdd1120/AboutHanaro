@@ -88,14 +88,14 @@ button {
   }
 
 
-
-.link{
+.link {
     padding: 0;
     margin: -4px;
     display: inline-block;
     text-decoration: none;
     color: inherit;
 }
+
 .profile{
     position: relative;
     overflow: hidden;
