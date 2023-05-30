@@ -45,6 +45,7 @@
     border:6px white solid;
     box-sizing: border-box;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .team-item:hover{
