@@ -2,14 +2,13 @@
        @import url(../css/interviewSection.css);
        @import url(../css/multipleSection.css);
        @import url(../css/font.css);
-       body,button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+       body,button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th {
             margin: 0;
             padding: 0;
         }
         
         html{
             font-size: 10px;
-            /* max-width: 1700px; */
             margin: 0 auto;
             min-height: 3100px;
         }
@@ -19,6 +18,8 @@
             left: 0;
             right: 0;
             z-index: 100;
+            /* background: rgba(0,0,0,0.9); */
+            background-color: #000;
         }
         a{
             cursor: pointer;
@@ -31,7 +32,6 @@
             display: flex;
             position: relative;
             font-family: 'hana2-bold';
-            /* align-items: center; */
             flex-direction: column;
             padding: 8.0rem 0 8.0rem;
             font-size: 6.6rem;
@@ -96,7 +96,6 @@
         }
         #sub_title_bg{
             width: 70vw;
-            margin: 0 auto;
             top:0;
             object-fit: fill;
             border-radius: 1000px;
