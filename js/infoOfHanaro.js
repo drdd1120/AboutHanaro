@@ -136,16 +136,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // 아래 화살표 중간 고정
+// window.addEventListener('scroll', arrowScrollEvent);
+
+// function arrowScrollEvent() {
+//     const scrollPosition = window.scrollY;
+//     const arrowBox = document.querySelector('.arrow_box');
+//     const scrollThreshold = window.innerHeight * 2.6; // 스크롤 위치 임계값 (260vh)
+
+//     if (scrollPosition <= scrollThreshold) {
+//     arrowBox.style.position = 'absolute';
+//     arrowBox.style.top = `${scrollPosition}px`;
+//     }
+    
+// }
+
 window.addEventListener('scroll', arrowScrollEvent);
 
 function arrowScrollEvent() {
     const scrollPosition = window.scrollY;
     const arrowBox = document.querySelector('.arrow_box');
-    const scrollThreshold = window.innerHeight * 5; // 스크롤 위치 임계값 (500vh)
+    const windowWidth = window.innerWidth;
+    const scrollThreshold = window.innerHeight * 2.6; // 스크롤 위치 임계값 변경
+
 
     if (scrollPosition <= scrollThreshold) {
-    arrowBox.style.position = 'absolute';
-    arrowBox.style.top = `${scrollPosition}px`;
+        arrowBox.style.position = 'absolute';
+        arrowBox.style.top = `${scrollPosition}px`;
     }
 }
 
