@@ -12,7 +12,7 @@ var slideContainer = document.querySelector('.team-list'),
     if(matchMedia("screen and (max-width:940px)").matches){ 
         //화면 크기가 940px이하일때
         //940 이하에서는 2개씩 보이기때문에 showSize 2로 설정 -> team-item 의 flex-basis 잘 조정한뒤에 개수 조절 가능
-        showSize = 1; 
+        showSize = 2; 
         slideSize = 1; //슬라이드 되길 원하는 아이템 개수
     }
     else{//941px 이상일때
@@ -55,7 +55,7 @@ var slideContainer = document.querySelector('.team-list'),
         if(matchMedia("screen and (max-width:940px)").matches){ 
             //화면 크기가 940px이하일때
             //940 이하에서는 2개씩 보이기때문에 showSize 2로 설정 -> team-item 의 flex-basis 잘 조정한뒤에 개수 조절 가능
-            showSize = 1; 
+            showSize = 2; 
             slideSize = 1; //슬라이드 되길 원하는 아이템 개수
             resizeTimer = setTimeout(function() {
                 // 리사이즈가 끝난 후에 실행될 코드
