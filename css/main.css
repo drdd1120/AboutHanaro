@@ -4,9 +4,15 @@
 }
 
 html, body{
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+html{
+  overflow-y:scroll;
 }
 
 header{
@@ -156,6 +162,7 @@ button:hover, button:focus {
 */
 [data-carousel] {
   margin: 0 auto;
+  width: 100%;
   display: flex;
   position: relative;
 }
