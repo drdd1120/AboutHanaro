@@ -1,34 +1,49 @@
 @font-face {
     font-family: 'hana_title';
-    src: url(./Hana2.0_TTF/Hana2-Medium.ttf);
+    src: url(../resources/Hana2-Medium.ttf);  /*리소스 추가 필요*/
 }
 @font-face {
     font-family: 'hana_content';
-    src: url(./Hana2.0_TTF/Hana2-Light.ttf);
+    src: url(../resources/Hana2-Light.ttf);
+}
+@font-face {
+    font-family: 'hana_comment';
+    src: url(../resources/Hana2-Heavy.ttf);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 50%);
 }
 body{
-    background-color: black;
-    /* height: 200vh; 임의로 설정 */
+    /* background: black; */
+    background: url(../resources/sunset_renewal2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     color:white;
     font-weight: bold;
+    margin: 0 auto;
 }
 .container{ /*컨테이터 전체*/
     display:flex;
     margin: 0 auto;
-    flex-direction: column; /*세로로 출력*/
-    transition: opacity 0.5s ease;
-    /* justify-content: center; 가운데 정렬 */
+    flex-direction: column;
+    transition: opacity 0.5s ease; /*크기 조절 시 트랜지션 적용*/
 }
 #thank_you{  /*전체화면*/
     width:70vw;
-    height:450vh;
+    height:400vh;
 }
 #sub_content_01{  /*소제목, 부연설명(고마우신분들)*/
     width:70vw;
-    height: 60vh;
+    height: 50vh;
     text-align: center;
-    border-bottom: 1px solid rgb(65, 65, 65);
+    /* border-bottom: 1px solid rgb(65, 65, 65); */
     margin-top: 30vh;
+    transition: 0.1s;
 }
 #sub_title h3{
     font-size: 4rem; /*반응형 사이즈*/
@@ -43,144 +58,106 @@ body{
     width:70vw;
     height: 350vh; /*각 30vh씩*/
     display: flex;
-}
-#thanks_intro01{  /*스크롤 했을 때 나오도록*/
-    flex-direction: row;  /*내부 컨텐츠 -> 가로로*/
-    height:110vh;
-    width:70vw;
-    margin-top: 5vh;
-    padding-bottom: 3vh;
-    justify-content: flex-start;
-    border-bottom: 1px solid rgb(65, 65, 65);
-}
-.box{
-    display:flex;
-    margin: 0 auto;
     flex-direction: column;
 }
+.wrapper{
+    width:70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    /* border-bottom: 1px solid rgb(65, 65, 65); */
+    transition: opacity 0.5s;
+}
+.subtitle{  /*소제목*/
+    width:70vw;
+    height:15vh;
+    font-size: 3rem;
+    font-family: 'hana_title';
+    color:#4A9896;
+    text-align: center;
+    line-height: 15vh;  /*수직 정렬*/
+}
+.contentbox{
+    display:flex;
+    flex-direction:column;
+    height: 70vh;
+    background-color: #F5F5F5;
+    /* border: 5px solid #4A9896; */
+    border-radius: 50px;
+    align-items: center;
+}
+#contentbox1{
+    background-color:#313130;
+}
+.logobox{
+    background:url(../resources/cooperations_full.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10%;
+    height: 70vh;
+    width: 70vw;
+    border: transparent;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.logo{  /*협력사 전체 적용*/
+    background-size: contain;
+    flex-shrink: 0;
+}
+
 .transparent {
     opacity: 1;
 }
 .opaque {
     opacity: 0.5;
 }
-.left_box{
-    width:25vw;
-    font-size: 3rem;
-    font-family: 'hana_title';
+
+.box{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+#notflip{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.program{
+    width: 50%;
+    height: 100%;
     color:#4A9896;
     text-align: center;
-    line-height: 30vh;
 }
-.moving_line{
-    width:5vw;
-    border-left: 1px solid rgb(65, 65, 65); 
-    /*파란선 동적으로 움직이게 -> jquery 활용해서 구현*/
+.program p{
+    margin-top:5vh;
+    margin-bottom: -3vh;
+    font-size: 2rem;
 }
-.right_box{
-    position:relative;
-    width:40vw;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
+#left_program{
+    margin-right:-10vw;
 }
-.earth {  /*회전하는 궤도*/
-    position: relative;
-    border-style: solid;
-    border-color: rgb(225, 149, 225)
-    transparent 
-    transparent
-    transparent;
-    width: 40vh;
-    height: 40vh;
-    animation: orbit 36.5s
-    linear infinite;
-    border-width: 0.1em 0.1em 0 0;
-    border-radius: 50%;
-    display:block;
-    left: 1vw;
+#right_program{
+    margin-left:-10vw;
 }
-.earth:last-child{  /*회전하는 궤도*/
-    position: relative;
-    border-style: solid;
-    border-color: rgb(105, 210, 105)
-    transparent 
-    transparent
-    transparent;
-    width: 30vh;
-    height: 30vh;
-    animation: orbit_rev 36.5s
-    linear infinite;
-    border-width: 0.2em 0.1em 0 0;
-    border-radius: 50%;
-    display:block;
-    margin-right: 5vw;
-}
-.earth::before{
-    content: '';
-    border-radius: 50%;
-    top: 2.8em;
-    right: 2.8em;
-    background-color: black;
-}
-@keyframes orbit {
-    to{
-        transform: rotate(360deg);
-    }
-}@keyframes orbit_rev {
-    to{
-        transform: rotate(-360deg);
-    }
-}
-.right_box_inner{
-    left:3vw;
-    margin-top: 5vh;
-    position: relative;
-    display: flex;
-}
-/*첫 번째 컨텐츠*/
-#hana{
-    position: absolute;
-    left:7%;
-    top:10%;
-    /* bottom: 20vh; */
-    flex-shrink: 0;
-    background-image: url("./hanabank.png");
-    background-size: contain;
-    width: 80%;
-    height: 80%;
-    /* object-fit: cover; */
-    /* padding:2vw; */
-    background-repeat: no-repeat;
-    /* margin-right: 3vw; */
-}
-#alpaco{
-    position: absolute;
-    right:12%;
-    top:11%;
-    flex-shrink: 0;
-    background-image:url("./alpaco.png");
-    background-size: contain;
-    width: 80%;
-    height: 80%;
-    /* object-fit: cover;
-    padding:2vw; */
-    background-repeat: no-repeat
-}   
-
-/*카드 뒤집기 효과 참고 https://gurtn.tistory.com/157*/
+/*카드 뒤집기 효과 https://gurtn.tistory.com/157*/
 .flip { 
-    width: 50vh;
+    width: 25vw;
     height: 50vh;
     position: relative; 
     perspective: 1200px;
     margin: 1rem;
+    margin-top:15vh;
+    border-radius: 20px;
 }
 
 .card {
-    width: 80%; 
-    height: 80%; 
+    width: 100%; 
+    height: 100%; 
     position: relative;
     transition: 1s;
     transform-style: preserve-3d;
@@ -188,6 +165,7 @@ body{
 
 .front, .back {
     position: absolute;
+    top: -10vh;
     width: 100%; 
     height: 100%;
     backface-visibility: hidden;
@@ -198,19 +176,49 @@ body{
 }
 
 .front {
-    background: url(profile.jpg) no-repeat; 
+    background-size: 100% 100%;
+    object-fit: fill;
     align-items: center;
-    background-size: cover;
+    background-size: fill;
+}
+#fir_profile{
+    background: url(../resources/profile_1.jpg) no-repeat; 
+    background-size: 100% 100%;
+    object-fit: fill;
+    align-items: center;
+    background-size: fill;
+    border-radius: 20px;
+}
+#sec_profile{
+    background: url(../resources/profile_2.jpg) no-repeat; 
+    background-size: 100% 100%;
+    object-fit: fill;
+    align-items: center;
+    background-size: fill;
+    border-radius: 20px;
 }
 
 .back { 
-    /* text-align: center; */
-    /* align-items: center; */
-    /* left:0; */
-    background: url(spec.png) no-repeat; 
+    background: url(../resources/spec.png) no-repeat; 
     transform: rotateY(180deg);
-    background-size: cover;
+    object-fit: fill;
+    background-size: 100% 100%;
 }
+#fir_spec { 
+    background: url(../resources/spec_1.png) no-repeat; 
+    transform: rotateY(180deg);
+    object-fit: fill;
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+#sec_spec { 
+    background: url(../resources/spec_2.png) no-repeat; 
+    transform: rotateY(180deg);
+    object-fit: fill;
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+
 
 .flip:hover .card {
     transform: rotateY(180deg);
@@ -219,4 +227,136 @@ body{
 #thanks_intro01{
     font-size: 3vh;
 }
+.commentbox{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction:row;  /*줄이면 column으로 변경*/
+    justify-content: center;
+    align-items: center;
+}
+.comment{
+    position:relative;
+    width:25%;
+    height:60%;
+    padding: 10vh 2vh 0 2vh;
+    margin: 3%;
+    background-color:rgb(243,243,247);
+    border: 3.5px solid #4A9896;
+    border-radius: 10px;
+    color:black;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    transition: 0.3s
+}
+p{
+    font-size: 1.5rem;
+    font-family: hana_Title;
+    font-weight: bold;
+}
 
+/*미디어쿼리 시작*/
+@media screen and (max-width: 1410px){
+    .logobox{  /*기업 로고 변경(크기 맞춤)*/
+        background:url(../resources/cooperations_tablet.png);
+        background-position: center center;  /*중심 배치*/
+    }
+}
+
+@media screen and (max-width: 1150px) {  /*590~1150*/
+    .container p{  /*부연설명 글자크기 조절*/
+        font-size:0.5rem;
+    }
+    .box{  /*배열 변환(row -> column)*/
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    #notflip{
+        display:none;  /*성함 미출력*/
+    }
+    .program{
+        display:none;
+    }
+    .flip { 
+        height: 40vh;
+        width: 40vw;
+        perspective: 600px;
+    }
+    
+    .card {
+        height: 150%; 
+    } 
+    
+    .front, .back {
+        position: absolute;
+        /* top: -5vh; */
+    }
+    .commentbox{
+        flex-direction: column;  /*줄이면 column으로 변경*/
+    }
+    .comment{
+        width:80%;
+        height:20%;
+        margin: 3%;
+        padding: 2vh 0 0 0;
+    }
+    .comment p{
+        font-size: 1rem;
+    }
+}
+/* -------------------------------------------------- */
+@media screen and (max-width: 900px){
+    .logobox{  /*로고 출력사진 변환*/
+        background:url(../resources/cooperations_ver.png);
+        background-position: center center;
+    }
+}
+/* -------------------------------------------------- */
+@media screen and (max-width: 590px) {  /*350~590*/
+    #thank_you{  /*가로 확장*/
+        width:100vw;
+    }
+    #sub_content_01{  /*소제목, 부연설명(고마우신분들)*/
+        height: 50vh;
+    }
+    #sub_title h3{  /*고마우신분들*/
+        font-size: 3rem; /*반응형 사이즈*/
+    }
+    #sub_title p{
+        font-size: 1rem;  /*사이즈 변경*/
+    }
+    .subtitle{  /*소제목*/
+        font-size: 2rem;  /*사이즈 변경*/
+    }
+    .logobox{
+        background:url(../resources/cooperations_ver.png);  /*f*/
+        background-position: center center; /*로고 사이즈 변경*/
+    }
+    .flip { 
+        height: 40vh;
+        width: 60vw;
+        position: relative; 
+        object-fit: fill;
+        background-size: fill;
+    }
+    .commentbox{
+        flex-direction: column;  /*줄이면 column으로 변경*/
+    }
+    .comment{
+        width:80%;
+        height:25%;
+    }
+    .comment p{
+        font-size: 1rem;  /*사이즈 변경*/
+    }
+}
+/* ----------------------------------------------------- */
+@media screen and (max-width: 460px) {
+    .logobox{
+        background:url(../resources/cooperations_tiny.png);
+        background-position: center center;
+    }
+    
+}
