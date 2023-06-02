@@ -8,12 +8,8 @@ window.addEventListener("scroll", function () {
     //                      전체 화면의 70퍼센트
     document.body.classList.add("scroll-background");
     // document.getElementById("yourElementId").style.backgroundColor = "red";
-    
   } else {
     document.body.classList.remove("scroll-background");
     // document.getElementById("yourElementId").style.backgroundColor = "initial";
-
   }
 });
-
-

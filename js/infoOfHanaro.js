@@ -68,6 +68,7 @@ window.addEventListener('scroll', handleScrollText);
 handleScrollText();
 
 
+
 //캐러셀
 document.addEventListener('DOMContentLoaded', function () {
     const carousel = document.querySelector('.carousel');
@@ -85,12 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let newWidth;
 
     if (carouselWidth <= 900) {
-        if (itemCount <= 3) {
-        // 아이템 개수가 2개 또는 3개일 때는 고정 크기로 유지
-        newWidth = itemWidth;
-        } else {
-        newWidth = carouselWidth;
-        }
+        newWidth = carouselWidth; // 900px 이하일 때의 너비
     } else {
         newWidth = 700; // 900px 이상일 때의 너비
     }
@@ -102,6 +98,10 @@ document.addEventListener('DOMContentLoaded', function () {
         items.forEach(function (item) {
         item.style.width = `${itemWidth}px`;
         });
+
+        // 현재 위치 조정 -> 이거 좀 분석하고하면 깔끔하게 구현 가능할듯
+        currentPosition = 0;
+        container.style.transform = `translateX(${currentPosition}px)`;
     }
     }
 
@@ -127,8 +127,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // 윈도우 리사이즈 시 캐러셀 크기 재조정
-    window.addEventListener('resize', calculateItemWidth);
+    window.addEventListener('resize', function () {
+    calculateItemWidth();
+    });
 });
+
+
+
 
 // 아래 화살표 중간 고정
 window.addEventListener('scroll', arrowScrollEvent);
@@ -143,6 +148,38 @@ function arrowScrollEvent() {
     arrowBox.style.top = `${scrollPosition}px`;
     }
 }
+
+// 반응형에따라 html구조 바꾸기(Support구간)
+window.addEventListener("DOMContentLoaded", function() {
+
+    var screenWidth = window.innerWidth;
+    var supportEduPlaceVisualBox = document.querySelector(".support_edu_place_visual_box");
+    var originalContent = supportEduPlaceVisualBox.innerHTML;
+    var bottomContentIdealSupportVisualContents = document.querySelectorAll(".bottom_content_ideal_support_visual_content");
+    // 3번째에 있는 bottom_content_ideal_support_visual_content클래스에 접근하기 위함
+    var lastBottomContentIdealSupportVisualContent = bottomContentIdealSupportVisualContents[bottomContentIdealSupportVisualContents.length - 1];
+
+function updateLayout() {
+    if (screenWidth <= 910) {
+    // html구조 바꾸기
+    supportEduPlaceVisualBox.innerHTML = '<div class="support_edu_place_visual_content1"></div><div class="support_edu_place_visual_content2"></div>';
+    lastBottomContentIdealSupportVisualContent.id = "support_visual_content_box";
+    } else {
+    // 다시 돌리기
+    supportEduPlaceVisualBox.innerHTML = originalContent;
+    
+    }
+}
+
+    // 초기 로드 시 레이아웃 업데이트
+    updateLayout();
+
+    // 창 크기 변경 시 레이아웃 업데이트
+    window.addEventListener("resize", function() {
+    screenWidth = window.innerWidth;
+    updateLayout();
+    });
+});
 
 
 

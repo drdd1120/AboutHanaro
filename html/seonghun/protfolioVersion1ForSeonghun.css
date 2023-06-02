@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    
+    
+}
+.header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 20px 20px;
+    text-align: center;
+    background-image: url('../../resources/pofolver2/portVer1_header.jpg');
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+.nav.scrolled {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    z-index: 1;
+}
+.nav h1, .nav .menu a {
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.nav.scrolled h1, .nav.scrolled .menu a {
+    color: #000000;
+    
+}
+
+.nav h1 {
+    flex-basis: 25%;
+    text-align: left;
+    margin-left: 20px;
+    color: #000;
+}
+.nav .menu {
+    flex-basis: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav .menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+#header_name{
+    font-family: 'Black Han Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 3em;
+    color: white;
+}
+
+#header_name2{
+    font-family: 'Black Han Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: white;
+}
+
+.header hr {
+    width: 50%;
+    border: 1px solid #ff7f00;
+    margin-bottom: 30px;
+}
+.header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.header .btn {
+    padding: 5px 20px;
+    background-color: #ff7f00;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    top:10%;
+}
+
+
+
+/* -------------------헤더 끝 --------------*/
+
+
+
+.section {
+    padding: 20px;
+}
+.about-me {
+    height: 70vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* -----------타이틀 시작---------- */
+.title-box{
+    position: relative;
+    top:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title-frame{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    right:1%;
+    
+}
+
+.clip-image {
+    position: relative;
+    top:10%;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../../resources/pofolver2/titmeClip.jpg');
+    background-size: cover;
+}
+
+#clip-image2{
+    position: relative;
+    
+    background-image: url('../../resources/pofolver2/pofolclipnu.png');
+}
+
+
+#title {
+    font-family: 'Black Han Sans', sans-serif;
+    margin-bottom: 10px;
+    font-size: 3em;
+    border-bottom: 1px solid #ccc;
+}
+
+/* -----------타이틀 끝---------- */
+.about-me .content {
+    margin-top: 100px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+.about-me .content-item {
+
+    display: flex;
+
+    align-items: center;
+    text-align: left;
+}
+
+
+.about-me .content-item img {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+}
+.about-me .content-item p {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: 700;
+    color:#454648;
+}
+
+.about-me .content-item .small-text {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #888888;
+}
+
+/* Experience 섹션 시작 */
+
+.section_Experience{
+    height: 70vh;
+    
+}
+
+.exp_contatiner{
+    position: relative;
+    top:150px;
+    margin : auto;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    right: 10px;
+
+}
+
+.exp_sub_box{
+    width:30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+
+}
+
+.exp_sub_box .sub_title{
+    display: flex;
+    height: 10%;
+}
+
+.exp_sub_box .sub_title img{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.exp_sub_box .sub_title .title_text{
+    font-size: 1.4em;
+    margin: 0;
+    font-weight: 700;
+    color:#454648;
+    
+}
+
+
+.exp_sub_box p{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #454648;
+}
+
+.exp_sub_box p .small_text{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #888888;  
+}
+
+
+
+
+
+/* 스킬 섹션 시작 */
+
+.section_skills{
+    border: 1px solid red;
+    height: 200vh;
+    background-color: #F9C51D;
+}
+
+
+
+
+/* 프로젝트 섹션 시작 */
+
+.section_projects{
+    border: 1px solid blue;
+    height: 300vh;
+    background-color: #1D809F;
+}
+
+/* 이거 반응형할때 일정 프레임에서 width %로 바꾸기 */
+.projects_container{
+    position: relative;
+    top:120px;
+    margin: auto;
+    border: 1px solid;
+    width: 1100px;
+    height: 120vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#project1_con{
+    height: 100vh;
+}
+
+.projects_title_box{
+    margin-top: 5%;
+}
+
+.projects_title_box p {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.projects_title_small_box{
+}
+
+.projects_title_small_box p {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #888888;  
+}
+
+.projects_contents_container{
+    position: relative;
+    display: flex;
+    top:3%;
+    margin: auto;
+    width: 98%;
+    height: 80%;
+}
+
+
+/* 왼쪽 컨텐츠에 캐러셀 시작 */
+.pro_con_left{
+    width: 50%;
+    padding-left: 1%;
+    padding-right: 2.5%;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.carousel-image1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateX(100%);
+}
+
+.carousel-image1.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-image1.prev {
+    transform: translateX(-100%);
+}
+
+
+
+.prev,
+.next {
+    background-color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+.carousel-controls {
+    position: relative;
+    top:20px;
+    text-align: center;
+}
+
+/* 오른쪽 컨텐츠 설명 시작 */
+.pro_con_right{
+    width: 50%;
+    padding-left: 2.5%;
+    padding-right: 1%;
+}
+
+.pro_con_discript_box{
+    width: 100%;
+    height: 50vh;
+    border-bottom: 1px solid grey;
+}
+
+#project1{
+    height: 40vh;
+}
+
+.pro_red_2npyk{
+    color: rgb(237, 55, 112);
+    font-weight: 400;
+}
+
+.pro_con_discript_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 5px;;
+    width: 170px;
+    height: 50px;
+    color: white;
+    background-color: black;;
+    text-decoration: none;
+}
+
+.pro_con_discript_button:hover {
+    background-color: rgb(70, 68, 68);
+}
+
+.pro_con_skill_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+}
+
+.pro_con_skill_check{
+    display: flex;
+    width:100%;
+    height: 40%;
+}
+
+.pro_con_checkBox{
+    display: flex;
+    width: 170px;
+    height: 100%;
+}
+
+.pro_con_checkBox_img{
+    position: relative;
+    right: 7px;
+    width:20px;
+    height: 23px;
+    background-image: url('../../resources/pofolver2/pofolcheck2.jpg');
+    background-size: cover;
+}
+
+.pro_con_checkBox_img_text{
+    width:120px;
+    height: 25px;
+    font-weight: 900;
+}
+
+.pro_con_check_discript{
+    width: 100%;
+    height: 100%;
+}
+
+.pro_con_check_discript a{
+    text-decoration: none;
+    color: rgb(59, 145, 216);
+}
+
+.pro_con_mainContent_box{
+    height: 30vh;
+}
+
+#pro_con_main{
+    height: 10%;
+    width: 100%;
+}
+
+.footer{
+    height:30vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+.footer p {
+    font-size: 3em;
+    position: relative;
+    top:100px;
+}
+
+/* 플젝2 */
+#project2_con{
+    position: relative;
+    top : 160px;
+}
+
+.carousel-image2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateX(100%);
+}
+
+.carousel-image2.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-image2.prev {
+    transform: translateX(-100%);
+}
+
+
+@media ( max-width: 1200px ){
+    .projects_container{
+        width: 80%;
+    }
+}
