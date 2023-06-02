@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'hana_title';
-    src: url(../resources/Hana2-Medium.ttf);  /*리소스 추가 필요*/
+    src: url(../resources/Hana2.0_OTF/Hana2-Medium.otf);
 }
 @font-face {
     font-family: 'hana_content';
-    src: url(../resources/Hana2-Light.ttf);
+    src: url(../resources/Hana2.0_OTF/Hana2-Light.otf);
 }
 @font-face {
     font-family: 'hana_comment';
-    src: url(../resources/Hana2-Heavy.ttf);
+    src: url(../resources/Hana2.0_OTF/Hana2-Heavy.otf);
 }
 header{
     position: fixed;
@@ -20,7 +20,7 @@ header{
 }
 body{
     /* background: black; */
-    background: url(../resources/sunset_renewal2.jpg);
+    background: url(../resources/wallpaper.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     color:white;
