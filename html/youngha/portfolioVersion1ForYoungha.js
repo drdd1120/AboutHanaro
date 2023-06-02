@@ -110,3 +110,45 @@ var textElement = document.getElementById('pro4_url2');
 textElement.addEventListener('click', function() {
     window.open('https://www.abouthanaro.shop/source/html/main.html', '_blank');
 });
+
+
+
+//플젝2
+let slideIndex2 = 0;
+let slides2 = document.getElementsByClassName("carousel-image2");
+slides2[slideIndex2].style.opacity = "1";
+slides2[slideIndex2].style.transform = "translateX(0)";
+
+function moveSlide2(n) {
+    const prevIndex = slideIndex2;
+    slideIndex2 += n;
+
+    if (slideIndex2 >= slides2.length) {
+        slideIndex2 = slides2.length - 1;
+    }
+    if (slideIndex2 < 0) {
+        slideIndex2 = 0;
+    }
+
+    slides2[prevIndex].style.opacity = "0";
+    slides2[prevIndex].style.transform = (n > 0) ? "translateX(-100%)" : "translateX(100%)";
+    
+    slides2[slideIndex2].style.opacity = "1";
+    slides2[slideIndex2].style.transform = "translateX(0)";
+
+    // 버튼 비활성화 처리
+    const prevButton = document.getElementById("prev2");
+    const nextButton = document.getElementById("next2");
+
+    prevButton.disabled = (slideIndex2 === 0);
+    nextButton.disabled = (slideIndex2 === slides2.length - 1);
+}
+
+var textElement = document.getElementById('pro2_url1');
+
+textElement.addEventListener('click', function() {
+    window.open('https://drive.google.com/file/d/1AOZ7tUnE9Bkk29LhqjKHsQmJkFAbidfG/view?usp=drive_link', '_blank');
+});
+
+
+
