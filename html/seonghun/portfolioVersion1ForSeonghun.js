@@ -9,6 +9,17 @@ window.onscroll = function() {
     }
 };
 
+//네비바 메뉴 jquery로
+$('a').click(function(event) {
+    event.preventDefault(); // 기본 동작을 막습니다
+
+    var target = $(this.hash); // href의 해시 값 (예: "#section1")을 이용하여 이동 대상을 찾습니다
+    if (target.length) { // 대상이 있는 경우
+        $('html, body').animate({ // 애니메이션을 추가합니다
+            scrollTop: target.offset().top // 이동 대상의 위치로 스크롤합니다
+        }, 1000); // 1초 동안 부드럽게 스크롤합니다
+    }
+});
 
 
 //플젝1
@@ -42,6 +53,19 @@ function moveSlide1(n) {
     nextButton.disabled = (slideIndex1 === slides1.length - 1);
 }
 
+var textElement = document.getElementById('pro1_url1');
+
+textElement.addEventListener('click', function() {
+    window.open('https://github.com/seonghunhan/Fromto_Node', '_blank');
+});
+
+
+var textElement = document.getElementById('pro1_url2');
+
+textElement.addEventListener('click', function() {
+    window.open('https://play.google.com/store/apps/details?id=com.fromto', '_blank');
+});
+
 
 //플젝2
 let slideIndex2 = 0;
@@ -74,11 +98,24 @@ function moveSlide2(n) {
     nextButton.disabled = (slideIndex2 === slides2.length - 1);
 }
 
+var textElement = document.getElementById('pro2_url1');
+
+textElement.addEventListener('click', function() {
+    window.open('https://github.com/seonghunhan/Java_back', '_blank');
+});
+
+
+var textElement = document.getElementById('pro2_url2');
+
+textElement.addEventListener('click', function() {
+    window.open('https://youtu.be/wc-d5JSbVng', '_blank');
+});
+
 //플젝3
 let slideIndex3 = 0;
 let slides3 = document.getElementsByClassName("carousel-image3");
-slides2[slideIndex3].style.opacity = "1";
-slides2[slideIndex3].style.transform = "translateX(0)";
+slides3[slideIndex3].style.opacity = "1";
+slides3[slideIndex3].style.transform = "translateX(0)";
 
 function moveSlide3(n) {
     const prevIndex = slideIndex3;
@@ -104,3 +141,53 @@ function moveSlide3(n) {
     prevButton.disabled = (slideIndex3 === 0);
     nextButton.disabled = (slideIndex3 === slides3.length - 1);
 }
+
+var textElement = document.getElementById('pro3_url1');
+
+textElement.addEventListener('click', function() {
+    window.open('https://github.com/seonghunhan/capstone', '_blank');
+});
+
+
+//플젝4
+let slideIndex4 = 0;
+let slides4 = document.getElementsByClassName("carousel-image4");
+slides4[slideIndex4].style.opacity = "1";
+slides4[slideIndex4].style.transform = "translateX(0)";
+
+function moveSlide4(n) {
+    const prevIndex = slideIndex4;
+    slideIndex4 += n;
+
+    if (slideIndex4 >= slides4.length) {
+        slideIndex4 = slides4.length - 1;
+    }
+    if (slideIndex4 < 0) {
+        slideIndex4 = 0;
+    }
+
+    slides4[prevIndex].style.opacity = "0";
+    slides4[prevIndex].style.transform = (n > 0) ? "translateX(-100%)" : "translateX(100%)";
+    
+    slides4[slideIndex4].style.opacity = "1";
+    slides4[slideIndex4].style.transform = "translateX(0)";
+
+    // 버튼 비활성화 처리
+    const prevButton = document.getElementById("prev4");
+    const nextButton = document.getElementById("next4");
+
+    prevButton.disabled = (slideIndex4 === 0);
+    nextButton.disabled = (slideIndex4 === slides4.length - 1);
+}
+
+var textElement = document.getElementById('pro4_url1');
+
+textElement.addEventListener('click', function() {
+    window.open('https://github.com/drdd1120/AboutHanaro.git', '_blank');
+});
+
+var textElement = document.getElementById('pro4_url2');
+
+textElement.addEventListener('click', function() {
+    window.open('https://www.abouthanaro.shop/source/html/main.html', '_blank');
+});

@@ -206,7 +206,7 @@ body {
     position: relative;
     top:150px;
     margin : auto;
-    width: 90%;
+    width: 100%;
     height: 70%;
     display: flex;
     justify-content: space-between;
@@ -262,19 +262,106 @@ body {
 /* 스킬 섹션 시작 */
 
 .section_skills{
-    border: 1px solid red;
-    height: 200vh;
+    /* border: 1px solid red; */
+    height: 260vh;
     background-color: #F9C51D;
+
 }
 
+.skill_box{
 
+    /* border: 1px solid; */
+    height: 220vh;
+    position: relative;
+    top:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
+}
+
+.skill_contents_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border : 1px solid; */
+    width: 90%;
+    height: 20%;
+}
+
+.skill_title{
+    /* border : 1px solid blue; */
+    width: 80%;
+    height: 30%;
+    
+}
+
+.skill_title p {
+    font-size: 3rem;
+    font-family: 'Futura PT', 'Century Gothic', Arial, sans-serif;
+    letter-spacing:3px;
+    font-weight:700;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.skill_contents{
+    /* border : 1px solid red; */
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.Rectangle{
+    /* border: 1px solid; */
+    width:150px;
+    height: 80px;
+}
+
+.square{
+    /* border: 1px solid red; */
+    width:120px;
+    height: 120px;
+
+}
+
+#skill_language_box{
+    width:50%;
+    height:60%;
+}
+
+#skill_db_box{
+    width:65%;
+    height: 70%;
+}
+
+#skill_frontend_box{
+    width:65%;
+    height: 70%; 
+}
+
+#skill_devops_box{
+    width: 45%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-be;
+}
+
+#Collaboration_devops_box{
+    width: 90%;
+    height: 60%;
+}
 
 /* 프로젝트 섹션 시작 */
 
 .section_projects{
-    border: 1px solid blue;
-    height: 300vh;
+    height: 450vh;
     background-color: #1D809F;
 }
 
@@ -399,6 +486,14 @@ body {
     height: 40vh;
 }
 
+#project3{
+    height: 45vh;
+}
+
+#project2{
+    height: 40vh;
+}
+
 .pro_red_2npyk{
     color: rgb(237, 55, 112);
     font-weight: 400;
@@ -415,7 +510,9 @@ body {
     height: 50px;
     color: white;
     background-color: black;;
-    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    cursor: pointer;
 }
 
 .pro_con_discript_button:hover {
@@ -457,14 +554,19 @@ body {
 }
 
 .pro_con_check_discript{
+
     width: 100%;
     height: 100%;
 }
 
 .pro_con_check_discript a{
-    text-decoration: none;
+    width: 100%;
+    height: 100%;
     color: rgb(59, 145, 216);
+    cursor: pointer;
 }
+
+
 
 .pro_con_mainContent_box{
     height: 30vh;
@@ -493,6 +595,7 @@ body {
 #project2_con{
     position: relative;
     top : 160px;
+    height: 100vh;
 }
 
 .carousel-image2 {
@@ -513,9 +616,527 @@ body {
     transform: translateX(-100%);
 }
 
+/* 플젝3 */
+#project3_con{
+    position: relative;
+    top : 200px;
+    height: 100vh;
+}
+
+.carousel-image3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateX(100%);
+}
+
+.carousel-image3.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-image3.prev {
+    transform: translateX(-100%);
+}
+/* 플젝 4 */
+#project4_con{
+    position: relative;
+    top : 250px;
+    height: 100vh;
+}
+
+#project4{
+    height: 47vh;
+}
+
+.carousel-image4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateX(100%);
+}
+
+.carousel-image4.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.carousel-image4.prev {
+    transform: translateX(-100%);
+}
+
+@media ( max-width: 1700px){
+    #skill_devops_box{
+        width: 80%;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: space-be;
+    }
+
+    .section_projects{
+        height: 520vh;
+        background-color: #1D809F;
+    }
+
+    #project1_con{
+        height: 115vh;
+    }
+
+    #project1{
+        height:42vh;
+    }
+    /* #project2{
+        height: 40vh;
+    } */
+    
+    #project2_con{
+        position: relative;
+        top : 160px;
+        height: 110vh;
+    }
+
+    #project2{
+        height: 48vh;
+    }
+    
+    
+    #project3_con{
+        position: relative;
+        top : 200px;
+        height: 120vh;
+    }
+
+    #project3{
+        height:50vh;
+    }
+    
+    #project4_con{
+        position: relative;
+        top : 250px;
+        height: 120vh;
+    }
+
+    #project4{
+        height: 55vh;
+    }
+
+    .skill_title p {
+        font-size: 2.7rem;
+        margin-top: 35px;
+
+    }
+
+}
+
+@media ( max-width: 1600px){
+    .pro_con_discript_box{
+        font-size: 15px;
+        height: 60vh;
+    }
+
+    .pro_con_skill_box{
+        font-size: 15px;
+    }
+
+    .pro_con_mainContent_box{
+        font-size: 15px;
+    }
+
+
+    .Rectangle{
+        /* border: 1px solid; */
+        width:120px;
+        height: 70px;
+    }
+
+    .square{
+        /* border: 1px solid red; */
+        width:80px;
+        height: 80px;
+    
+    }
+    
+    .skill_title p {
+        font-size: 2.4rem;
+
+    }
+
+}
+
+@media ( max-width: 1500px){
+    .pro_con_discript_box{
+        font-size: 14px;
+    }
+
+    .pro_con_skill_box{
+        font-size: 14px;
+    }
+
+    .pro_con_mainContent_box{
+        font-size: 14px;
+    }
+
+    #project1{
+        height:36vh;
+    }
+    /* #project2{
+        height: 40vh;
+    } */
+
+
+    #project3{
+        height:40vh;
+    }
+
+
+}
+
+@media ( max-width: 1400px ) {
+    .pro_con_discript_box{
+        height: 70vh;
+    }
+
+    .Rectangle{
+        /* border: 1px solid; */
+        width:120px;
+        height: 70px;
+    }
+    
+    .square{
+        /* border: 1px solid red; */
+        width:80px;
+        height: 80px;
+    
+    }
+
+    .skill_title{
+        /* border : 1px solid blue; */
+        width: 80%;
+        height: 30%;
+        
+    }
+    
+    .skill_title p {
+        font-size: 2.5rem;
+        letter-spacing:3px;
+        font-weight:700;
+        margin-top: 40px;
+    }
+}
+
+@media ( max-width: 1300px ) {
+    .pro_con_discript_box{
+        height: 70vh;
+    }
+
+    .Rectangle{
+        /* border: 1px solid; */
+        width:140px;
+        height: 80px;
+    }
+    
+    .square{
+        /* border: 1px solid red; */
+        width:90px;
+        height: 90px;
+    
+    }
+
+    .skill_title{
+        /* border : 1px solid blue; */
+        width: 80%;
+        height: 30%;
+        
+    }
+    
+    .skill_title p {
+        font-size: 2.5rem;
+        letter-spacing:3px;
+        font-weight:700;
+        margin-top: 40px;
+    }
+
+    .exp_sub_box .sub_title .title_text{
+        font-size: 1.2em;
+        margin: 0;
+        font-weight: 700;
+        color:#454648;
+        
+    }
+
+    .exp_sub_box .sub_title img{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+    
+    .skill_title p {
+        font-size: 2.2rem;
+        letter-spacing:3px;
+        font-weight:700;
+        margin-top: 40px;
+    }
+
+
+    .exp_sub_box p{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #454648;
+    }
+    
+    .exp_sub_box p .small_text{
+        font-size: 1rem;
+        font-weight: 500;
+        color: #888888;  
+    }
+}
+
+@media ( max-width: 1280px ){
+
+    .section_projects{
+        border: 1px solid blue;
+        height: 520vh;
+        background-color: #1D809F;
+    }
+
+    #project1_con{
+        height: 115vh;
+    }
+
+    #project1{
+        height:42vh;
+    }
+    /* #project2{
+        height: 40vh;
+    } */
+    
+    #project2_con{
+        position: relative;
+        top : 160px;
+        height: 110vh;
+    }
+
+    #project2{
+        height: 45vh;
+    }
+    
+    
+    #project3_con{
+        position: relative;
+        top : 200px;
+        height: 120vh;
+    }
+
+    #project3{
+        height:50vh;
+    }
+    
+    #project4_con{
+        position: relative;
+        top : 250px;
+        height: 120vh;
+    }
+
+    #project4{
+        height: 55vh;
+    }
+}
 
 @media ( max-width: 1200px ){
     .projects_container{
         width: 80%;
     }
+
+    .pro_con_discript_box{
+        font-size: 13px;
+    }
+
+    .pro_con_skill_box{
+        font-size: 13px;
+    }
+
+    .pro_con_mainContent_box{
+        font-size: 13px;
+    }
+
+    #project3{
+        height:44vh;
+    }
+
+    .Rectangle{
+        /* border: 1px solid; */
+        width:120px;
+        height: 70px;
+    }
+    
+    .square{
+        /* border: 1px solid red; */
+        width:80px;
+        height: 80px;
+    
+    }
+
+    .skill_title{
+        /* border : 1px solid blue; */
+        width: 80%;
+        height: 30%;
+        
+    }
+    
+    .skill_title p {
+        font-size: 2.5rem;
+        letter-spacing:3px;
+        font-weight:700;
+        margin-top: 40px;
+    }
 }
+
+@media ( max-width: 1150px ){
+
+    .pro_con_discript_button{
+        border-radius: 10px;
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .pro_con_checkBox_img_text{
+        width:100px;
+    }
+
+    .Rectangle{
+        /* border: 1px solid; */
+        width:120px;
+        height: 70px;
+    }
+    
+    .square{
+        /* border: 1px solid red; */
+        width:80px;
+        height: 80px;
+    
+    }
+
+    .skill_title{
+        /* border : 1px solid blue; */
+        width: 80%;
+        height: 30%;
+        
+    }
+    
+    .skill_title p {
+        font-size: 2.5rem;
+        letter-spacing:3px;
+        font-weight:700;
+        margin-top: 40px;
+    }
+
+    .exp_sub_box .sub_title .title_text{
+        font-size: 1em;
+        margin: 0;
+        font-weight: 700;
+        color:#454648;
+        
+    }
+
+    .exp_sub_box .sub_title img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    
+    .skill_title p {
+        font-size: 2rem;
+        letter-spacing:3px;
+        font-weight:700;
+        margin-top: 40px;
+    }
+
+
+    .exp_sub_box p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #454648;
+    }
+    
+    .exp_sub_box p .small_text{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #888888;  
+    }
+}
+
+@media ( max-width: 1060px ) {
+    .pro_con_discript_box{
+        font-size: 12.5px;
+    }
+
+    .pro_con_checkBox_img_text{
+        width:95px;
+    }
+
+    .pro_con_skill_box{
+        font-size: 12.5px;
+    }
+
+    .pro_con_mainContent_box{
+        font-size: 12.5px;
+    }
+
+    .Rectangle{
+        /* border: 1px solid; */
+        width:100px;
+        height: 60px;
+    }
+    
+    .square{
+        /* border: 1px solid red; */
+        width:60px;
+        height: 60px;
+    
+    }
+
+    .exp_sub_box .sub_title .title_text{
+        font-size: 1em;
+        margin: 0;
+        font-weight: 700;
+        color:#454648;
+        
+    }
+
+    .exp_sub_box .sub_title img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    
+    .skill_title p {
+        font-size: 2rem;
+        letter-spacing:3px;
+        font-weight:700;
+        margin-top: 40px;
+    }
+
+
+    .exp_sub_box p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #454648;
+    }
+    
+    .exp_sub_box p .small_text{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #888888;  
+    }
+    
+}
+
+@media ( max-width: 1024px ){
+
+}
+
