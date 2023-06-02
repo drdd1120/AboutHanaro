@@ -56,97 +56,16 @@ function moveSlide1(n) {
 var textElement = document.getElementById('pro1_url1');
 
 textElement.addEventListener('click', function() {
-    window.open('https://github.com/seonghunhan/Fromto_Node', '_blank');
+    window.open('https://github.com/HUY-Bookmark/BookMark', '_blank');
 });
 
 
 var textElement = document.getElementById('pro1_url2');
 
 textElement.addEventListener('click', function() {
-    window.open('https://play.google.com/store/apps/details?id=com.fromto', '_blank');
+    window.open('https://youtu.be/t7TrTA7m7hw', '_blank');
 });
 
-
-//플젝2
-let slideIndex2 = 0;
-let slides2 = document.getElementsByClassName("carousel-image2");
-slides2[slideIndex2].style.opacity = "1";
-slides2[slideIndex2].style.transform = "translateX(0)";
-
-function moveSlide2(n) {
-    const prevIndex = slideIndex2;
-    slideIndex2 += n;
-
-    if (slideIndex2 >= slides2.length) {
-        slideIndex2 = slides2.length - 1;
-    }
-    if (slideIndex2 < 0) {
-        slideIndex2 = 0;
-    }
-
-    slides2[prevIndex].style.opacity = "0";
-    slides2[prevIndex].style.transform = (n > 0) ? "translateX(-100%)" : "translateX(100%)";
-    
-    slides2[slideIndex2].style.opacity = "1";
-    slides2[slideIndex2].style.transform = "translateX(0)";
-
-    // 버튼 비활성화 처리
-    const prevButton = document.getElementById("prev2");
-    const nextButton = document.getElementById("next2");
-
-    prevButton.disabled = (slideIndex2 === 0);
-    nextButton.disabled = (slideIndex2 === slides2.length - 1);
-}
-
-var textElement = document.getElementById('pro2_url1');
-
-textElement.addEventListener('click', function() {
-    window.open('https://github.com/seonghunhan/Java_back', '_blank');
-});
-
-
-var textElement = document.getElementById('pro2_url2');
-
-textElement.addEventListener('click', function() {
-    window.open('https://youtu.be/wc-d5JSbVng', '_blank');
-});
-
-//플젝3
-let slideIndex3 = 0;
-let slides3 = document.getElementsByClassName("carousel-image3");
-slides3[slideIndex3].style.opacity = "1";
-slides3[slideIndex3].style.transform = "translateX(0)";
-
-function moveSlide3(n) {
-    const prevIndex = slideIndex3;
-    slideIndex3 += n;
-
-    if (slideIndex3 >= slides3.length) {
-        slideIndex3 = slides3.length - 1;
-    }
-    if (slideIndex3 < 0) {
-        slideIndex3 = 0;
-    }
-
-    slides3[prevIndex].style.opacity = "0";
-    slides3[prevIndex].style.transform = (n > 0) ? "translateX(-100%)" : "translateX(100%)";
-    
-    slides3[slideIndex3].style.opacity = "1";
-    slides3[slideIndex3].style.transform = "translateX(0)";
-
-    // 버튼 비활성화 처리
-    const prevButton = document.getElementById("prev3");
-    const nextButton = document.getElementById("next3");
-
-    prevButton.disabled = (slideIndex3 === 0);
-    nextButton.disabled = (slideIndex3 === slides3.length - 1);
-}
-
-var textElement = document.getElementById('pro3_url1');
-
-textElement.addEventListener('click', function() {
-    window.open('https://github.com/seonghunhan/capstone', '_blank');
-});
 
 
 //플젝4

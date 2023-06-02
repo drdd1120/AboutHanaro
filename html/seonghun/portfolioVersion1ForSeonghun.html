@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/abcd1234.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./protfolioVersion1ForSeonghun.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
     <div class="nav">
         <h1>HSH's Portfolio</h1>
         <div class="menu">
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <a href="#aboutme">About Me</a>
             <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">projects</a>
         </div>
     </div>
     <div class="header">
@@ -30,8 +32,8 @@
     </div>
 
 
-    
-    <div class="section about-me">
+    <!-- 어바웃 미 -->
+    <div class="section about-me" id="aboutme">
         <div class ="title-frame">
             <span class="clip-image"></span>
             <span id="title">ABOUT ME</span>
@@ -88,7 +90,8 @@
         </div>
     </div>
 
-    <div class="section_Experience">
+    <!-- 경험 -->
+    <div class="section_Experience" id="experience">
         <div class="title-box">
             <div class ="title-frame">
                 <span class="clip-image" id="clip-image3"></span>
@@ -147,26 +150,133 @@
                     </span>
                 </p>
             </span>
+            <span class="exp_sub_box">
+                <div class="sub_title">
+                    <div><img src="../../resources/pofolver2/pofolcheck.jpg" ></div>
+                    <div class="title_text">Certificate</div>
+                </div>
+                
+                <p>정보처리기사</p>
+                <p>AWS-SAA
+                </p>
+                <p>SQLD
+                </p>
+                <p>전기기사
+                </p>
+                <p>전기기능사
+                </p>
+            </span>
         </div>
     </div>
 
 
-    <div class="section_skills">
+    <!-- 스킬 스택 -->
+    <div class="section_skills" id="skills">
         <div class="title-box">
             <div class ="title-frame">
                 <span class="clip-image" id="clip-image2"></span>
                 <span id="title">SKILLS</span>
             </div>
         </div>
+
+        <div class="skill_box">
+
+            <div class="skill_contents_box">
+                <div class="skill_title">
+                    <p>Language</p>
+                </div>
+                <div class="skill_contents" id="skill_language_box">
+                    <img src="../../resources/pofolver2/java.png", class="square">
+                    <img src="../../resources/pofolver2/JavaScript-logo.png", class="square">
+                    <img src="../../resources/pofolver2/images.jpg", class="Rectangle">
+                </div>
+            </div>
+        
+
+            <div class="skill_contents_box">
+                <div class="skill_title">
+                    <p>Backend</p>
+                </div>
+                <div class="skill_contents">
+                    <img src="../../resources/pofolver2/springboot.png", class="Rectangle">
+                    <img src="../../resources/pofolver2/security.png", class="Rectangle">
+                    <img src="../../resources/pofolver2/mybatis.jpg", class="Rectangle">
+                    <img src="../../resources/pofolver2/jode_js.png", class="square">
+                    <img src="../../resources/pofolver2/flask.png", class="Rectangle">
+                </div>
+            </div>
+
+
+            <div class="skill_contents_box">
+                <div class="skill_title">
+                    <p>DB</p>
+                </div>
+                <div class="skill_contents" id="skill_db_box">
+                    <img src="../../resources/pofolver2/mysql.png", class="Rectangle">
+                    <img src="../../resources/pofolver2/sqlite.png", class="Rectangle">
+                    <img src="../../resources/pofolver2/h2.png", class="Rectangle">
+                    <img src="../../resources/pofolver2/access.png", class="square">
+                </div>
+            </div>
+
+
+            <div class="skill_contents_box" >
+                <div class="skill_title">
+                    <p>FrontEnd</p></div>
+                <div class="skill_contents" id="skill_frontend_box">
+                    <img src="../../resources/pofolver2/html5.png", class="square">
+                    <img src="../../resources/pofolver2/css3.png", class="square">
+                    <img src="../../resources/pofolver2/js.png", class="square">
+                    <img src="../../resources/pofolver2/react2.png", class="square">
+                </div>
+            </div>
+
+            <div class="skill_contents_box">
+                <div class="skill_title">
+                    <p>DevOps</p>
+                </div>
+                <div class="skill_contents" id="skill_devops_box">
+                    <img src="../../resources/pofolver2/aws.png", class="Rectangle">
+                    <img src="../../resources/pofolver2/ec2.jpg", class="square">
+                    <img src="../../resources/pofolver2/s3.jpg", class="square">
+                    <img src="../../resources/pofolver2/rds.png", class="Rectangle">
+                    <img src="../../resources/pofolver2/route53.jpg", class="Rectangle">
+                    <img src="../../resources/pofolver2/Nginx.png", class="square">
+                    <img src="../../resources/pofolver2/Reverse Proxy.png", class="square">
+                    <img src="../../resources/pofolver2/ssl.png", class="square">
+                    <img src="../../resources/pofolver2/redis.png", class="square">
+                </div>
+            </div>
+
+            <div class="skill_contents_box">
+                <div class="skill_title" >
+                    <p>Tools & Collaboration</p></div>
+                <div class="skill_contents" id="Collaboration_devops_box">
+                    <img src="../../resources/pofolver2/git.png", class="Rectangle">
+                    <img src="../../resources/pofolver2/notion.png", class="square">
+                    <img src="../../resources/pofolver2/IntelliJ.png", class="square">
+                    <img src="../../resources/pofolver2/DataGrip.png", class="square">
+                    <img src="../../resources/pofolver2/VS Code.png", class="square">
+                    <img src="../../resources/pofolver2/colab.png", class="Rectangle">
+                    <img src="../../resources/pofolver2/postman.png", class="Rectangle">
+                </div>
+            </div>
+
+
+        </div>
     </div>
+        
+    
 
 
-    <div class="section_projects">
+    <!-- 플젝 시작 -->
+    <div class="section_projects" id="project">
         <div class="title-box">
             <div class ="title-frame">
                 <span class="clip-image" id="clip-image2"></span>
                 <span id="title">PROJECTS</span>
             </div>
+            
         </div>
 
         <!-- 플젝 1  -->
@@ -210,11 +320,11 @@
                         <span class="pro_red_2npyk">SSL</span>을 설치하여 Qualys 기준 보안 A등급을 맞추기도 하였고, 신고 기능을 필수적으로 포함하여 실제 앱을 운영하는 데 필요한 기능들을 인지할 수 있었던 좋은 경험이었습니다. 
                         
                         
-                        <br><br>
-                        <a class="pro_con_discript_button" href="https://github.com/seonghunhan/Fromto_Node">
+                        
+                        <button type="button" onclick="window.open('https://github.com/seonghunhan/Fromto_Node', '_blank');" class="pro_con_discript_button" >
                             자세히 보기 ▶ README
                             
-                        </a>
+                        </button>
                     </div>
                     <div class="pro_con_skill_box">
                         <div class="pro_con_skill_check">
@@ -223,8 +333,11 @@
                                 <div class="pro_con_checkBox_img_text">GitHub</div>
                             </div>
                             <div class="pro_con_check_discript">
-                                <a href="https://github.com/seonghunhan/Fromto_Node">github.com/seonghunhan/Fromto_Node</a>
+                                <a id="pro1_url1">github.com/seonghunhan/Fromto_Node</a>
                             </div>
+
+                            
+
                             </div>
                         <div class="pro_con_skill_check">
                             <div class="pro_con_checkBox">
@@ -232,7 +345,7 @@
                                 <div class="pro_con_checkBox_img_text">PlayStore</div>
                             </div>
                             <div class="pro_con_check_discript">
-                                <a href="https://play.google.com/store/apps/details?id=com.fromto">PlayStore 바로가기</a>
+                                <a id="pro1_url2">PlayStore</a>
                             </div>
                         </div>
                         <div class="pro_con_skill_check">
@@ -308,7 +421,7 @@
 
 
                 <div class="pro_con_right">
-                    <div class="pro_con_discript_box", id="project1">
+                    <div class="pro_con_discript_box", id="project2">
                         
                         <b>국회와 일반 시민간의 소통 및 접근성을 높이는 것이 주 목적인 어플</b>입니다. 국회 데이터 경진대회 서비스 부문에 참가하기 위함이었고, 교내에서 팀 빌딩 후 프로젝트를 진행했습니다.
                         <br><br>
@@ -320,11 +433,11 @@
                         이렇게 파싱한 뉴스기사를 NLP 모델을 이용하여 3줄로 요약하기 위해 
                         <span class="pro_red_2npyk">Flask</span>프레임워크를 별도로 설치했고, 간접적으로나마 
                         <span class="pro_red_2npyk">MSA</span>아키텍처를 경험했던 좋은 프로젝트 였습니다.
-                        <br><br>
-                        <a class="pro_con_discript_button" href="https://github.com/seonghunhan/Java_back">
+                        
+                        <button type="button" onclick="window.open('https://github.com/seonghunhan/Java_back', '_blank');" class="pro_con_discript_button" >
                             자세히 보기 ▶ README
                             
-                        </a>
+                        </button>
                     </div>
                     <div class="pro_con_skill_box">
                         <div class="pro_con_skill_check">
@@ -333,7 +446,7 @@
                                 <div class="pro_con_checkBox_img_text">GitHub</div>
                             </div>
                             <div class="pro_con_check_discript">
-                                <a href="https://github.com/seonghunhan/Java_back">github.com/seonghunhan/Java_back</a>
+                                <a id="pro2_url1">github.com/seonghunhan/Java_back</a>
                             </div>
                             </div>
                         <div class="pro_con_skill_check">
@@ -342,7 +455,7 @@
                                 <div class="pro_con_checkBox_img_text">시연 영상</div>
                             </div>
                             <div class="pro_con_check_discript">
-                                <a href="https://youtu.be/wc-d5JSbVng">시연영상 바로가기</a>
+                                <a id="pro2_url2">시연영상 바로가기</a>
                             </div>
                         </div>
                         <div class="pro_con_skill_check">
@@ -418,9 +531,9 @@
 
 
                 <div class="pro_con_right">
-                    <div class="pro_con_discript_box", id="project1">
+                    <div class="pro_con_discript_box", id="project3">
                         
-                        <b>2022 차량용 반도체 수급 문제와 수율 문제가 대두되었고, 이에 원활한 수급을 위해 진행항 프로젝트</b>입니다. 캡스톤 주제로 진행했고, 반도체 Wafer 불량 유형을 탐지하는 모델을 개발했습니다.
+                        <b>2022 차량용 반도체 수급 문제와 수율 문제가 대두되었고, 이에 원활한 수급을 위해 진행한 프로젝트</b>입니다. 캡스톤 주제로 진행했고, 반도체 Wafer 불량 유형을 탐지하는 모델을 개발했습니다.
                         <br><br>
                         백엔드 개발자로서 추후 데이터 팀과의 협업을 위한 역량을 쌓기에 좋은 프로젝트였고,
                         다양한 라이브러리를 사용하면서 데이터를 다루는 데 많은 자신감이 생겼습니다.
@@ -431,10 +544,12 @@
                         <br><br>
                         추후에 <span class="pro_red_2npyk">Flask</span> 프레임워크를 사용하여 API로 로컬에서 이미지파일 한개만 로딩하면 불량유형이
                         산출되도록 확장했습니다.
-                        <a class="pro_con_discript_button" href="https://github.com/seonghunhan/capstone">
+                        
+                        <button type="button" onclick="window.open('https://github.com/seonghunhan/capstone', '_blank');" class="pro_con_discript_button" >
                             자세히 보기 ▶ README
                             
-                        </a>
+                        </button>
+                        
                     </div>
                     <div class="pro_con_skill_box">
                         <div class="pro_con_skill_check">
@@ -443,7 +558,7 @@
                                 <div class="pro_con_checkBox_img_text">GitHub</div>
                             </div>
                             <div class="pro_con_check_discript">
-                                <a href="https://github.com/seonghunhan/capstone">github.com/seonghunhan/capstone</a>
+                                <a id="pro3_url1">github.com/seonghunhan/capstone</a>
                             </div>
                             </div>
                         
@@ -490,10 +605,119 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
+
+
+        <!-- 플젝 4 -->  
+        <div class="projects_container" id="project4_con">
+            <div class="projects_title_box">
+                <p>디지털하나로 소개 웹사이트</p>
+            </div>
+            <div class="projects_title_small_box">
+                <p>2023.05 (5人 팀 프로젝트)</p>
+            </div>
+
+            <div class="projects_contents_container">
+                <div class="pro_con_left">
+                    <div class="carousel">
+                        <div class="carousel-images4">
+                        <img class="carousel-image4 active" src="../../resources/pofolver2/project4_1.jpg">
+                        <img class="carousel-image4" src="../../resources/pofolver2/project4_2.jpg">
+                        <img class="carousel-image4" src="../../resources/pofolver2/project4_1.jpg">
+                        <!-- 이미지 추가 영역 500X500 맞추기 -->
+                        </div>
+
+                    </div>
+                    <div class="carousel-controls">
+                        <button id="prev4" class="prev" onclick="moveSlide4(-1)" disabled><i class="fas fa-arrow-left"></i></button>
+                        <button id="next4" class="next" onclick="moveSlide4(1)"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+
+                <div class="pro_con_right">
+                    <div class="pro_con_discript_box", id="project4">
+                        
+                        <b>디지털 하나로 풀스택 개발자 교육 과정을 소개하는 웹 프로젝트</b>입니다. 첫 번째 프로젝트로서 본 교육 과정을 소개하는 웹 페이지 제작 프로젝트를 수행하였습니다.
+                        <br><br>
+                        <span class="pro_red_2npyk">부트스트랩</span>을 사용하지 않고 <span class="pro_red_2npyk">HTML</span>, <span class="pro_red_2npyk">CSS</span>, <span class="pro_red_2npyk">JavaScript</span>를 직접 이용해 웹페이지를 제작함으로써 웹 개발의 핵심 개념을 학습하는 데 크게 도움이 되었습니다.
+                        다양한 라이브러리를 사용하면서 데이터를 다루는 데 많은 자신감이 생겼습니다.
+                        <br><br>
+                        모바일 디바이스에서도 완벽하게 작동하는 <span class="pro_red_2npyk">반응형 웹</span>을 목표로, 375px부터 최대 화면 크기까지 고려하여 웹페이지를 설계하였습니다. 이 과정에서 <span class="pro_red_2npyk">HTML</span> 초기 설계의 중요성을 깊이 이해하게 되었습니다.
+                        <br><br>
+                        또한 캐러셀을 포함한 다양한 구조에 동적인 애니메이션 효과를 부여함으로써, 웹 페이지에 생동감을 더하였습니다. 의도했던 대로 구현되는 것을 보며, <span class="pro_red_2npyk">웹 퍼블리싱</span>에 대한 자신감이 생겼습니다. 
+                        
+                        <button type="button" onclick="window.open('https://www.abouthanaro.shop/source/html/main.html', '_blank');" class="pro_con_discript_button" >
+                            ▶ Open
+                            
+                        </button>
+                        
+                    </div>
+                    <div class="pro_con_skill_box">
+                        <div class="pro_con_skill_check">
+                            <div class="pro_con_checkBox">
+                                <div class="pro_con_checkBox_img"></div>
+                                <div class="pro_con_checkBox_img_text">GitHub</div>
+                            </div>
+                            <div class="pro_con_check_discript">
+                                <a id="pro4_url1">https://github.com/drdd1120/AboutHanaro.git</a>
+                            </div>
+                            </div>
+                        
+                        <div class="pro_con_skill_check">
+                            <div class="pro_con_checkBox">
+                                <div class="pro_con_checkBox_img"></div>
+                                <div class="pro_con_checkBox_img_text">배포</div>
+                            </div>
+                            <div class="pro_con_check_discript">
+                                <a id="pro2_url2">https://www.abouthanaro.shop</a>
+                            </div>
+                        </div>
+
+                        <div class="pro_con_skill_check">
+                            <div class="pro_con_checkBox">
+                                <div class="pro_con_checkBox_img"></div>
+                                <div class="pro_con_checkBox_img_text">언어</div>
+                            </div>
+                            <div class="pro_con_check_discript">
+                                HTML5, CSS3, JavaScript
+                            </div>
+                        </div>
+                        <div class="pro_con_skill_check">
+                            <div class="pro_con_checkBox">
+                                <div class="pro_con_checkBox_img"></div>
+                                <div class="pro_con_checkBox_img_text">개발 Tools</div>
+                            </div>
+                            <div class="pro_con_check_discript">
+                                Toos VSCode, GitHub
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_con_mainContent_box">
+                        <div class="pro_con_checkBox" id="pro_con_main">
+                            <div class="pro_con_checkBox_img"></div>
+                            <div class="pro_con_checkBox_img_text" id="pro_con_main">웹 퍼블리싱 및 배포 참여</div>
+                        </div>
+                        &nbsp&nbsp- 과정소개 페이지 제작
+                        <br>
+                        &nbsp&nbsp- 포트폴리오 페이지 제작
+                        <br>
+                        &nbsp&nbsp- 최대치부터 375px까지 반응형 제작
+                        <br>
+                        &nbsp&nbsp- AWS EC2 클라우딩을 통해 웹 페이지 배포
+                        <br>
+                        &nbsp&nbsp- Nginx 설치후 Let's Encrypt을 이용해 SSL설치
+
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
     </div>
 
+    <!-- 푸터  -->
     <div class="footer">
         <p>포트폴리오를 끝까지 봐주셔서 감사합니다 :)</p>
     </div>
@@ -502,3 +726,4 @@
 </body>
 
 </html>
+
