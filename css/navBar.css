@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@700&display=swap');
+@import url(../css/font.css);
+
 :root{
 	--text-color: white;
 	--background-color: rgba(0, 0, 0, 0);
@@ -13,7 +14,7 @@ body{
 
 a{
 	text-decoration: none;
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'hana2-bold';
 	color:var(--text-color);
 
 }
@@ -88,7 +89,7 @@ em{
 	color: white;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:815px){
 	.navbar{
 		flex-direction: column;
 		align-items: flex-start;
