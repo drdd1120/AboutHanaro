@@ -1,4 +1,4 @@
-
+@import url(../css/font.css);
 .multiple_container{
     position: relative;
     height: auto;
@@ -38,6 +38,7 @@
     z-index: 10;
     margin: 0 1%;
     border: 2px transparent;
+
 }
 .team-item img{
     width: 100%;    
@@ -48,16 +49,11 @@
     object-fit: cover;
     aspect-ratio: 9/16;
     background-color: rgba(0, 0, 0, 0.8);
-    /* object-fit: cover; */
 }
 
 .team-item:hover{
     flex-basis: calc(19.5%);
     transition: all 0.4s;
-}
-.team-item:hover img{
-    /* border: #020b0b 3px solid;
-    transition: all .7s; */
 }
 /*사람 이름 hover : 1초 변경*/
 .team-item:hover h2{ 
@@ -119,12 +115,11 @@ button {
     width: 90%;
     left: 10px;
     bottom:10px;
+    font-family: 'hana2-medium';
 }
 .profile-contents h2{
     position: relative;
-    /* font-size: calc(1.5vw); */
     font-size: 2.5rem;
-    /* font-size: calc(1.6vw); */
     color: #ffffff;
 }
 .profile-contents>h2:not(span){
@@ -133,7 +128,6 @@ button {
 .profile-contents h2 span{
     color: #008385;
     display: block;
-    /* font-size: calc(1.2vw); */
     font-size: 1.8rem;
     white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
 }
