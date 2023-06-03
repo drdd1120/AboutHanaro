@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     color:white;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 0 auto;
 }
 .container{ /*컨테이터 전체*/
