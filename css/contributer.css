@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     color:white;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 0 auto;
 }
 .container{ /*컨테이터 전체*/
@@ -145,6 +145,7 @@ body{
     margin-left:-10vw;
 }
 /*카드 뒤집기 효과 https://gurtn.tistory.com/157*/
+
 .flip { 
     width: 25vw;
     height: 50vh;
@@ -168,7 +169,7 @@ body{
     top: -10vh;
     width: 100%; 
     height: 100%;
-    backface-visibility: hidden;
+    backface-visibility: hidden;  /*뒷쪽에서 앞면 안보이게*/
     display: flex;
     justify-content: center;
     align-items: center;
