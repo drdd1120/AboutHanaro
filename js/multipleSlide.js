@@ -7,6 +7,7 @@ var slideContainer = document.querySelector('.team-list'),
     showSize = 0, //한 섹션에 몇개씩 보이고 있는지
     prevBtn = document.querySelector('.Wallop-buttonPrevious'),
     nextBtn = document.querySelector('.Wallop-buttonNext');
+    var resizeTimer;
 
     //반응형 멀티플슬라이드를 위한 초기화 구문( 940 초과, 940 이하)
     if(matchMedia("screen and (max-width:940px)").matches){ 
@@ -27,30 +28,22 @@ var slideContainer = document.querySelector('.team-list'),
         + item.getBoundingClientRect().width) * (-currentIdx) + 'px';
     };
     nextBtn.addEventListener('click',function(){
-        console.log("다음 눌림");
         if(currentIdx<itemsCount-showSize){
             //현재 인덱스가 총아이템 수 - 보여지고싶은 만큼의 수보다 작을 경우 실행
             //현재인덱스 + 몇개씩 아이템 넘길지 크기만큼 이동
             moveSlide(currentIdx+slideSize);
-            console.log(currentIdx);
         }else{
             moveSlide(0);
-            console.log(currentIdx);
         }
     });
     prevBtn.addEventListener('click',function(){
-        console.log("이전 눌림")
         if(currentIdx>0){//정상적으로 왼쪽으로 가는 경우
         moveSlide(currentIdx-slideSize);
-        console.log(currentIdx);
-        // console.log(currentIdx)
         }else{//0번째 요소에서 클릭했을 경우, 맨 오른쪽 요소로 이동
             moveSlide(itemsCount-showSize);
-            console.log(currentIdx);
         }
     });
     window.addEventListener('resize', function() {
-        var resizeTimer;
         clearTimeout(resizeTimer);
         if(matchMedia("screen and (max-width:940px)").matches){ 
             //화면 크기가 940px이하일때
@@ -68,10 +61,8 @@ var slideContainer = document.querySelector('.team-list'),
             resizeTimer = setTimeout(function() {
                 if(currentIdx>itemsCount-showSize){
                     moveSlide(itemsCount-showSize)
-                    console.log("resize - if 문 실행")
                 }
                 else{
-                    console.log("resize - else 문 실행")
                     moveSlide(currentIdx);
                 }
               },300);

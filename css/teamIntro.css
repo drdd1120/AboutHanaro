@@ -12,6 +12,13 @@
             margin: 0 auto;
             min-height: 3100px;
         }
+        .navbar__menu{
+            font-size: 16px;
+        }
+        .blank > p{
+            margin-block-start: 24px;
+            margin-block-end: 24px;
+        }
         header{
             position: fixed;
             top: 0;
@@ -272,15 +279,14 @@
         }
         .new_team{
             flex-direction: row;
-            flex-basis: calc(117.8%);
+            flex-basis: calc(120.8%);
         }
         .team-item{
-            flex-basis: 39.9%;
+            flex-basis: calc(33.33%);
             flex-grow: 0;
-            /* width: calc(50%-10px); */
         }
         .team-item:hover{
-            flex-basis: 41%;
+            flex-basis: calc(35.33%);
         }
         .profile-contents h2{
             font-size: calc(3.0vw);

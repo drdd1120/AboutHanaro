@@ -17,7 +17,7 @@ body {
     justify-content: flex-start;
     padding: 100px 20px 20px;
     text-align: center;
-    background-image: url('../../resources/pofolver2/portVer1_header.jpg');
+    background-image: url('/resources/pofolver2/2_1/portVer1_header.jpg');
 }
 
 .nav {
@@ -142,14 +142,14 @@ body {
     right: 5px;
     width: 40px;
     height: 40px;
-    background-image: url('../../resources/pofolver2/titmeClip.jpg');
+    background-image: url('/resources/pofolver2/2_1/titmeClip.jpg');
     background-size: cover;
 }
 
 #clip-image2{
     position: relative;
     
-    background-image: url('../../resources/pofolver2/pofolclipnu.png');
+    background-image: url('/resources/pofolver2/2_1/pofolclipnu.png');
 }
 
 
@@ -543,7 +543,7 @@ body {
     right: 7px;
     width:20px;
     height: 23px;
-    background-image: url('../../resources/pofolver2/pofolcheck2.jpg');
+    background-image: url('/resources/pofolver2/2_1/pofolcheck2.jpg');
     background-size: cover;
 }
 
