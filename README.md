@@ -196,7 +196,7 @@
         2. 스크롤과 함께 화살표 하강 후 <b>'지금 참가 해보세요'</b> 문구에서 정지
         3. 캐러셀을 활용한 디지털 하나로의 특전, 혜택 등을 게시
         4. 좌, 우 화살표 클릭 시 해당 방향으로 캐러셀 컨텐츠 슬라이드
-        5. 퀘도를 도는 효과 출력
+        5. 궤도를 도는 효과 출력
         <br><br>
         <p align="left"><img src="https://github.com/drdd1120/AboutHanaro/assets/112413977/d74ec051-5349-4068-a862-5ac1c3eb17ab" width="500px"></p>
         <p align="left"><img src="https://github.com/drdd1120/AboutHanaro/assets/112413977/c1e0775b-3351-4f2c-8016-53db6f823b86" width="500px"></p>
