@@ -1,6 +1,6 @@
 // DOM 요소를 선택합니다.
 const fadeElements = document.querySelectorAll('.middle_box_img');
-// 스크롤 이벤트 핸들러 함수를 정의합니다.
+// 스크롤 이벤트 핸들러 함수를 정의
 function handleScroll() {
     fadeElements.forEach((element) => {
         const elementTop = element.getBoundingClientRect().top;
@@ -9,7 +9,7 @@ function handleScroll() {
 
         // console.log('elementTop:', elementTop);
         // console.log('windowHeight:', windowHeight);
-        // 스크롤 위치에 따라 요소의 위치를 조정하여 fade-in 효과를 적용합니다.
+        // 스크롤 위치에 따라 요소의 위치를 조정하여 fade-in 효과를 적용
         if(elementTop < windowHeight* 0.55){
         element.style.opacity = 1;
         element.style.transition = 'transform 0.5s ease';
@@ -37,9 +37,9 @@ function handleScroll() {
         }
     });
     }
-// 스크롤 이벤트를 추가합니다.
+// 스크롤 이벤트를 추가
 window.addEventListener('scroll', handleScroll);
-// 페이지 로딩 시 초기 상태를 체크합니다.
+// 페이지 로딩 시 초기 상태를 체크
 handleScroll();
 const fadeTestElements = document.querySelectorAll('.miidle_box_text');
 
@@ -48,7 +48,7 @@ function handleScrollText() {
         const elementTop = element.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
-        // 스크롤 위치에 따라 요소의 위치를 조정하여 fade-in 효과를 적용합니다.
+        // 스크롤 위치에 따라 요소의 위치를 조정하여 fade-in 효과를 적용
         if(elementTop < windowHeight* 0.85){
         element.style.opacity = 1;
         element.style.transition = 'transform 0.5s ease';
@@ -62,9 +62,9 @@ function handleScrollText() {
     );
     }
 
-// 스크롤 이벤트를 추가합니다.
+// 스크롤 이벤트를 추가
 window.addEventListener('scroll', handleScrollText);
-// 페이지 로딩 시 초기 상태를 체크합니다.
+// 페이지 로딩 시 초기 상태를 체크
 handleScrollText();
 
 
@@ -150,13 +150,15 @@ document.addEventListener('DOMContentLoaded', function () {
     
 // }
 
+
+// 아래 화살표 중간 고정
 window.addEventListener('scroll', arrowScrollEvent);
 
 function arrowScrollEvent() {
     const scrollPosition = window.scrollY;
     const arrowBox = document.querySelector('.arrow_box');
     const windowWidth = window.innerWidth;
-    const scrollThreshold = window.innerHeight * 2.6; // 스크롤 위치 임계값 변경
+    const scrollThreshold = window.innerHeight * 2.45; // 스크롤 위치 임계값 변경
 
 
     if (scrollPosition <= scrollThreshold) {
