@@ -127,15 +127,7 @@ display: block;
         background: url(/resources/ic-24-detail.svg ) no-repeat;
         background-size: 100% 100%;
 }
-.left-align{
-    text-align: left !important;
-    padding-left: 10vw;
-}
-.right-align{
-    text-align: right !important;
-    padding-right: 10vw;
 
-}
 
 .img_box{
     position: absolute;
