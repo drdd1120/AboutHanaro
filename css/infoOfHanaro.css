@@ -9,6 +9,10 @@
     opacity: 1;
 }
 
+div{
+    transition: width 0.5s;
+
+}
 
 body{
     font-family: 'hana2-regular';
