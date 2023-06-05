@@ -76,6 +76,7 @@ body{
     color:#4A9896;
     text-align: center;
     line-height: 15vh;  /*수직 정렬*/
+    font-weight: bold;
 }
 .contentbox{
     display:flex;

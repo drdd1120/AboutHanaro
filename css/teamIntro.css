@@ -50,7 +50,14 @@
             background-clip: text;
             margin: 0 auto;
         }
-
+        .left-align{
+            text-align: left !important;
+            padding-left: 10vw;
+        }
+        .right-align{
+            text-align: right !important;
+            padding-right: 10vw;
+        }
         body{ 
             color: #999;
             overflow-y: scroll;
@@ -383,6 +390,12 @@
             font-size: 1.9rem;
             line-height: 3.2rem;
         }
+        .left-align{
+            padding-left: 0;
+        }
+        .right-align{
+            padding-right: 0;
+        }
         
     }
     @media (max-width:375px){
@@ -392,5 +405,10 @@
             font-size: 1.4rem;
             line-height: 6.0rem;
         }
+        .main_title{
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+        }
+
     }
 
