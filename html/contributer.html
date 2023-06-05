@@ -18,7 +18,7 @@
     <div class="container" id="thank_you"> <!--전체-->
         <div class="container" id="sub_content_01">  <!--페이지 소제목 -->
             <div class="container" id="sub_title">
-                <h3 class="title" style="font-family: 'hana_title';">고마우신분들</h3>
+                <h3 class="title" style="font-family: 'hana_title'">고마우신분들</h3>
                 <p style="font-family: 'hana_content">하나로 프로그램이 진행될 수 있도록 지원해 주신 분들입니다.<br>
                     개발, 데이터분석 실력 향상의 기반을 마련해 주셨습니다.
                 </p>
@@ -83,26 +83,6 @@
             </div>
         </div> 
     </div>
-    <script>  // 스크롤 투명도 조절
-        window.addEventListener('scroll', function() {
-            var intros = document.querySelectorAll('.wrapper');
-
-            for (var i = 0; i < intros.length; i++) {
-                var intro = intros[i]; 
-                var introOffset = intro.offsetTop; // 요소의 y값
-                var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-                // 스크롤 했을 때 스크린 위치와 요소의 y값의 차이 조절 -> 투명도 반영
-                var opacity = 0.5 + ((scrollPosition - introOffset + 200) / 300);
-                opacity = Math.min(Math.max(opacity, 0), 1);
-
-                intro.style.opacity = opacity.toString();  // 적용
-            }
-        });
-    </script>
-    <footer>
-        <div>
-
-        </div>
-    </footer>
 </body>
+<script src="../js/contributer.js" type="text/javascript"></script>
 </html>
