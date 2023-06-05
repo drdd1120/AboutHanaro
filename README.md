@@ -1,7 +1,7 @@
 
 <p align="center"><img src="https://github.com/drdd1120/AboutHanaro/assets/112413977/cddea307-3dfa-400b-8cfd-ce876589b263"></p>
 
-<h1 align="middle">AboutHanro</h1>
+<h1 align="middle">AboutHanaro</h1>
 
 **디지털하나로 첫번째 팀 프로젝트_정적 웹 페이지**
 
