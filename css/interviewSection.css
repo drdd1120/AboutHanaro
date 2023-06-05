@@ -2,12 +2,10 @@
 .section_title, .section_interview{
     width: 100%;
     margin-top: 100px;
-    /* height: 100vh; */
 }
 .section_title{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 .section_interview{
     display: flex;
@@ -55,7 +53,6 @@
     line-height: 5.2rem;
     letter-spacing: -0.8px;
     font-family: 'hana2-regular';
-    /* font-family: "NanumSquare", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "NanumSquare", "Malgun Gothic", "맑은 고딕", Dotum, "돋움", sans-serif; */
     font-weight: 600;
     color: #000000;
 }
@@ -127,15 +124,7 @@ display: block;
         background: url(/resources/ic-24-detail.svg ) no-repeat;
         background-size: 100% 100%;
 }
-.left-align{
-    text-align: left !important;
-    padding-left: 10vw;
-}
-.right-align{
-    text-align: right !important;
-    padding-right: 10vw;
 
-}
 
 .img_box{
     position: absolute;
