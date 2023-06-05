@@ -391,10 +391,10 @@
             line-height: 3.2rem;
         }
         .left-align{
-            padding-left: 2vw;
+            padding-left: 0;
         }
         .right-align{
-            padding-right: 2vw;
+            padding-right: 0;
         }
         
     }
@@ -405,7 +405,10 @@
             font-size: 1.4rem;
             line-height: 6.0rem;
         }
-
+        .main_title{
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+        }
 
     }
 

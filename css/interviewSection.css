@@ -18,6 +18,9 @@
     width: 1200px;
     background: white;
 }
+.interview_list ul{
+    padding: 0 0;
+}
 .section_interview .interview_list > ul > li:first-child {
     border-top: 2px solid #e5e5e5;
 }
